@@ -1,0 +1,114 @@
+{
+  "recordedAt": "2026-10-04T07:38:05.240Z",
+  "provider": "ollama (local)",
+  "model": "qwen2.5vl:3b",
+  "input": "cropped work zone (ROI + 40 px), PNG",
+  "correct": 8,
+  "total": 8,
+  "runs": [
+    {
+      "spot": "sidewalk",
+      "frame": "before",
+      "question": "Is the sidewalk around the utility pole clean, with no garbage bags?",
+      "expectedClean": false,
+      "raw": "{\"answer\": false, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": false,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 6820
+    },
+    {
+      "spot": "sidewalk",
+      "frame": "after",
+      "question": "Is the sidewalk around the utility pole clean, with no garbage bags?",
+      "expectedClean": true,
+      "raw": "{\"answer\": true, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": true,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 3020
+    },
+    {
+      "spot": "alley",
+      "frame": "before",
+      "question": "Is the brick wall clean, with no graffiti on it?",
+      "expectedClean": false,
+      "raw": "{\"answer\": false, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": false,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 3048
+    },
+    {
+      "spot": "alley",
+      "frame": "after",
+      "question": "Is the brick wall clean, with no graffiti on it?",
+      "expectedClean": true,
+      "raw": "{\"answer\": true, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": true,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 2933
+    },
+    {
+      "spot": "lot",
+      "frame": "before",
+      "question": "Is the grass area clean, with no dumped debris?",
+      "expectedClean": false,
+      "raw": "{\"answer\": false, \"confidence\": 0.8}",
+      "parsed": {
+        "answer": false,
+        "confidence": 0.8
+      },
+      "error": null,
+      "ms": 2950
+    },
+    {
+      "spot": "lot",
+      "frame": "after",
+      "question": "Is the grass area clean, with no dumped debris?",
+      "expectedClean": true,
+      "raw": "{\"answer\": true, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": true,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 3043
+    },
+    {
+      "spot": "tires",
+      "frame": "before",
+      "question": "Is the sidewalk clear, with no tires lying on it?",
+      "expectedClean": false,
+      "raw": "{\"answer\": false, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": false,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 3022
+    },
+    {
+      "spot": "tires",
+      "frame": "after",
+      "question": "Is the sidewalk clear, with no tires lying on it?",
+      "expectedClean": true,
+      "raw": "{\"answer\": true, \"confidence\": 0.95}",
+      "parsed": {
+        "answer": true,
+        "confidence": 0.95
+      },
+      "error": null,
+      "ms": 2945
+    }
+  ]
+}

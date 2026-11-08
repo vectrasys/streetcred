@@ -1,0 +1,2981 @@
+{
+ "schema": "streetcred-demo-history/v1",
+ "label": "Fictional demo history",
+ "note": "Invented help history for the fictional demo city. Not verified work, not CITY.tasks, not payouts, not PayPal sandbox.",
+ "period": {
+  "from": "2026-07-06",
+  "to": "2026-10-03",
+  "days": 90
+ },
+ "seed": 20261005,
+ "events": [
+  {
+   "id": "DH-0001",
+   "residentId": "elena",
+   "kind": "leaves",
+   "date": "2026-07-06",
+   "reward": 25
+  },
+  {
+   "id": "DH-0002",
+   "residentId": "marcus",
+   "kind": "bin",
+   "date": "2026-07-06",
+   "reward": 10
+  },
+  {
+   "id": "DH-0003",
+   "residentId": "mateo",
+   "kind": "stickers",
+   "date": "2026-07-06",
+   "reward": 20
+  },
+  {
+   "id": "DH-0004",
+   "residentId": "nadia",
+   "kind": "leaves",
+   "date": "2026-07-06",
+   "reward": 20
+  },
+  {
+   "id": "DH-0005",
+   "residentId": "omar",
+   "kind": "boxes",
+   "date": "2026-07-06",
+   "reward": 20
+  },
+  {
+   "id": "DH-0006",
+   "residentId": "ruby",
+   "kind": "mattress",
+   "date": "2026-07-06",
+   "reward": 45
+  },
+  {
+   "id": "DH-0007",
+   "residentId": "wyatt",
+   "kind": "bags",
+   "date": "2026-07-06",
+   "reward": 25
+  },
+  {
+   "id": "DH-0008",
+   "residentId": "dante",
+   "kind": "branches",
+   "date": "2026-07-07",
+   "reward": 20
+  },
+  {
+   "id": "DH-0009",
+   "residentId": "fatima",
+   "kind": "drain",
+   "date": "2026-07-07",
+   "reward": 30
+  },
+  {
+   "id": "DH-0010",
+   "residentId": "maya",
+   "kind": "leaves",
+   "date": "2026-07-07",
+   "reward": 25
+  },
+  {
+   "id": "DH-0011",
+   "residentId": "omar",
+   "kind": "weeds",
+   "date": "2026-07-07",
+   "reward": 15
+  },
+  {
+   "id": "DH-0012",
+   "residentId": "fatima",
+   "kind": "drain",
+   "date": "2026-07-08",
+   "reward": 25
+  },
+  {
+   "id": "DH-0013",
+   "residentId": "maya",
+   "kind": "boxes",
+   "date": "2026-07-08",
+   "reward": 15
+  },
+  {
+   "id": "DH-0014",
+   "residentId": "maya",
+   "kind": "debris",
+   "date": "2026-07-08",
+   "reward": 55
+  },
+  {
+   "id": "DH-0015",
+   "residentId": "grace",
+   "kind": "bin",
+   "date": "2026-07-09",
+   "reward": 20
+  },
+  {
+   "id": "DH-0016",
+   "residentId": "kenji",
+   "kind": "couch",
+   "date": "2026-07-09",
+   "reward": 45
+  },
+  {
+   "id": "DH-0017",
+   "residentId": "fatima",
+   "kind": "flyers",
+   "date": "2026-07-10",
+   "reward": 15
+  },
+  {
+   "id": "DH-0018",
+   "residentId": "isabel",
+   "kind": "stickers",
+   "date": "2026-07-10",
+   "reward": 20
+  },
+  {
+   "id": "DH-0019",
+   "residentId": "luis",
+   "kind": "boxes",
+   "date": "2026-07-10",
+   "reward": 20
+  },
+  {
+   "id": "DH-0020",
+   "residentId": "maya",
+   "kind": "stickers",
+   "date": "2026-07-10",
+   "reward": 10
+  },
+  {
+   "id": "DH-0021",
+   "residentId": "priya",
+   "kind": "weeds",
+   "date": "2026-07-10",
+   "reward": 15
+  },
+  {
+   "id": "DH-0022",
+   "residentId": "wyatt",
+   "kind": "graffiti",
+   "date": "2026-07-10",
+   "reward": 50
+  },
+  {
+   "id": "DH-0023",
+   "residentId": "chloe",
+   "kind": "leaves",
+   "date": "2026-07-11",
+   "reward": 25
+  },
+  {
+   "id": "DH-0024",
+   "residentId": "hiro",
+   "kind": "bin",
+   "date": "2026-07-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0025",
+   "residentId": "hiro",
+   "kind": "stickers",
+   "date": "2026-07-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0026",
+   "residentId": "jordan",
+   "kind": "bags",
+   "date": "2026-07-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0027",
+   "residentId": "maya",
+   "kind": "boxes",
+   "date": "2026-07-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0028",
+   "residentId": "omar",
+   "kind": "branches",
+   "date": "2026-07-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0029",
+   "residentId": "dante",
+   "kind": "leaves",
+   "date": "2026-07-12",
+   "reward": 25
+  },
+  {
+   "id": "DH-0030",
+   "residentId": "elena",
+   "kind": "boxes",
+   "date": "2026-07-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0031",
+   "residentId": "fatima",
+   "kind": "litter",
+   "date": "2026-07-12",
+   "reward": 20
+  },
+  {
+   "id": "DH-0032",
+   "residentId": "jordan",
+   "kind": "litter",
+   "date": "2026-07-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0033",
+   "residentId": "nadia",
+   "kind": "bin",
+   "date": "2026-07-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0034",
+   "residentId": "noah",
+   "kind": "butts",
+   "date": "2026-07-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0035",
+   "residentId": "omar",
+   "kind": "butts",
+   "date": "2026-07-12",
+   "reward": 10
+  },
+  {
+   "id": "DH-0036",
+   "residentId": "dante",
+   "kind": "litter",
+   "date": "2026-07-13",
+   "reward": 20
+  },
+  {
+   "id": "DH-0037",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-07-13",
+   "reward": 20
+  },
+  {
+   "id": "DH-0038",
+   "residentId": "grace",
+   "kind": "graffiti",
+   "date": "2026-07-13",
+   "reward": 50
+  },
+  {
+   "id": "DH-0039",
+   "residentId": "noah",
+   "kind": "leaves",
+   "date": "2026-07-13",
+   "reward": 25
+  },
+  {
+   "id": "DH-0040",
+   "residentId": "rosa",
+   "kind": "weeds",
+   "date": "2026-07-13",
+   "reward": 15
+  },
+  {
+   "id": "DH-0041",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-07-14",
+   "reward": 15
+  },
+  {
+   "id": "DH-0042",
+   "residentId": "grace",
+   "kind": "leaves",
+   "date": "2026-07-14",
+   "reward": 20
+  },
+  {
+   "id": "DH-0043",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-07-14",
+   "reward": 20
+  },
+  {
+   "id": "DH-0044",
+   "residentId": "wyatt",
+   "kind": "litter",
+   "date": "2026-07-14",
+   "reward": 15
+  },
+  {
+   "id": "DH-0045",
+   "residentId": "maya",
+   "kind": "branches",
+   "date": "2026-07-15",
+   "reward": 25
+  },
+  {
+   "id": "DH-0046",
+   "residentId": "maya",
+   "kind": "mattress",
+   "date": "2026-07-15",
+   "reward": 40
+  },
+  {
+   "id": "DH-0047",
+   "residentId": "owen",
+   "kind": "bags",
+   "date": "2026-07-15",
+   "reward": 25
+  },
+  {
+   "id": "DH-0048",
+   "residentId": "owen",
+   "kind": "litter",
+   "date": "2026-07-15",
+   "reward": 10
+  },
+  {
+   "id": "DH-0049",
+   "residentId": "maya",
+   "kind": "beach",
+   "date": "2026-07-16",
+   "reward": 15
+  },
+  {
+   "id": "DH-0050",
+   "residentId": "nadia",
+   "kind": "leaves",
+   "date": "2026-07-16",
+   "reward": 25
+  },
+  {
+   "id": "DH-0051",
+   "residentId": "ruby",
+   "kind": "boxes",
+   "date": "2026-07-16",
+   "reward": 25
+  },
+  {
+   "id": "DH-0052",
+   "residentId": "ruby",
+   "kind": "butts",
+   "date": "2026-07-16",
+   "reward": 10
+  },
+  {
+   "id": "DH-0053",
+   "residentId": "lucia",
+   "kind": "leaves",
+   "date": "2026-07-17",
+   "reward": 20
+  },
+  {
+   "id": "DH-0054",
+   "residentId": "nadia",
+   "kind": "graffiti",
+   "date": "2026-07-17",
+   "reward": 30
+  },
+  {
+   "id": "DH-0055",
+   "residentId": "naomi",
+   "kind": "drain",
+   "date": "2026-07-17",
+   "reward": 25
+  },
+  {
+   "id": "DH-0056",
+   "residentId": "diego",
+   "kind": "litter",
+   "date": "2026-07-18",
+   "reward": 15
+  },
+  {
+   "id": "DH-0057",
+   "residentId": "maya",
+   "kind": "butts",
+   "date": "2026-07-18",
+   "reward": 15
+  },
+  {
+   "id": "DH-0058",
+   "residentId": "chloe",
+   "kind": "beach",
+   "date": "2026-07-19",
+   "reward": 15
+  },
+  {
+   "id": "DH-0059",
+   "residentId": "ethan",
+   "kind": "boxes",
+   "date": "2026-07-19",
+   "reward": 20
+  },
+  {
+   "id": "DH-0060",
+   "residentId": "nadia",
+   "kind": "bin",
+   "date": "2026-07-19",
+   "reward": 10
+  },
+  {
+   "id": "DH-0061",
+   "residentId": "theo",
+   "kind": "butts",
+   "date": "2026-07-19",
+   "reward": 15
+  },
+  {
+   "id": "DH-0062",
+   "residentId": "ethan",
+   "kind": "litter",
+   "date": "2026-07-20",
+   "reward": 15
+  },
+  {
+   "id": "DH-0063",
+   "residentId": "imani",
+   "kind": "butts",
+   "date": "2026-07-20",
+   "reward": 10
+  },
+  {
+   "id": "DH-0064",
+   "residentId": "imani",
+   "kind": "litter",
+   "date": "2026-07-20",
+   "reward": 20
+  },
+  {
+   "id": "DH-0065",
+   "residentId": "lucia",
+   "kind": "litter",
+   "date": "2026-07-20",
+   "reward": 20
+  },
+  {
+   "id": "DH-0066",
+   "residentId": "isabel",
+   "kind": "weeds",
+   "date": "2026-07-21",
+   "reward": 25
+  },
+  {
+   "id": "DH-0067",
+   "residentId": "maya",
+   "kind": "tires",
+   "date": "2026-07-21",
+   "reward": 30
+  },
+  {
+   "id": "DH-0068",
+   "residentId": "noah",
+   "kind": "beach",
+   "date": "2026-07-21",
+   "reward": 15
+  },
+  {
+   "id": "DH-0069",
+   "residentId": "sofia",
+   "kind": "stickers",
+   "date": "2026-07-21",
+   "reward": 20
+  },
+  {
+   "id": "DH-0070",
+   "residentId": "wyatt",
+   "kind": "graffiti",
+   "date": "2026-07-21",
+   "reward": 45
+  },
+  {
+   "id": "DH-0071",
+   "residentId": "fatima",
+   "kind": "butts",
+   "date": "2026-07-22",
+   "reward": 15
+  },
+  {
+   "id": "DH-0072",
+   "residentId": "fatima",
+   "kind": "flyers",
+   "date": "2026-07-22",
+   "reward": 15
+  },
+  {
+   "id": "DH-0073",
+   "residentId": "kenji",
+   "kind": "beach",
+   "date": "2026-07-22",
+   "reward": 30
+  },
+  {
+   "id": "DH-0074",
+   "residentId": "luis",
+   "kind": "graffiti",
+   "date": "2026-07-22",
+   "reward": 35
+  },
+  {
+   "id": "DH-0075",
+   "residentId": "nadia",
+   "kind": "beach",
+   "date": "2026-07-22",
+   "reward": 20
+  },
+  {
+   "id": "DH-0076",
+   "residentId": "sofia",
+   "kind": "beach",
+   "date": "2026-07-22",
+   "reward": 20
+  },
+  {
+   "id": "DH-0077",
+   "residentId": "sofia",
+   "kind": "leaves",
+   "date": "2026-07-22",
+   "reward": 25
+  },
+  {
+   "id": "DH-0078",
+   "residentId": "wyatt",
+   "kind": "leaves",
+   "date": "2026-07-22",
+   "reward": 20
+  },
+  {
+   "id": "DH-0079",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-07-23",
+   "reward": 15
+  },
+  {
+   "id": "DH-0080",
+   "residentId": "maya",
+   "kind": "butts",
+   "date": "2026-07-23",
+   "reward": 10
+  },
+  {
+   "id": "DH-0081",
+   "residentId": "priya",
+   "kind": "weeds",
+   "date": "2026-07-23",
+   "reward": 25
+  },
+  {
+   "id": "DH-0082",
+   "residentId": "ruby",
+   "kind": "leaves",
+   "date": "2026-07-23",
+   "reward": 20
+  },
+  {
+   "id": "DH-0083",
+   "residentId": "sofia",
+   "kind": "bags",
+   "date": "2026-07-23",
+   "reward": 15
+  },
+  {
+   "id": "DH-0084",
+   "residentId": "caleb",
+   "kind": "stickers",
+   "date": "2026-07-24",
+   "reward": 15
+  },
+  {
+   "id": "DH-0085",
+   "residentId": "elena",
+   "kind": "mattress",
+   "date": "2026-07-24",
+   "reward": 45
+  },
+  {
+   "id": "DH-0086",
+   "residentId": "lucia",
+   "kind": "butts",
+   "date": "2026-07-24",
+   "reward": 15
+  },
+  {
+   "id": "DH-0087",
+   "residentId": "luis",
+   "kind": "flyers",
+   "date": "2026-07-24",
+   "reward": 15
+  },
+  {
+   "id": "DH-0088",
+   "residentId": "owen",
+   "kind": "graffiti",
+   "date": "2026-07-24",
+   "reward": 40
+  },
+  {
+   "id": "DH-0089",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-07-25",
+   "reward": 15
+  },
+  {
+   "id": "DH-0090",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-07-25",
+   "reward": 20
+  },
+  {
+   "id": "DH-0091",
+   "residentId": "jordan",
+   "kind": "graffiti",
+   "date": "2026-07-25",
+   "reward": 40
+  },
+  {
+   "id": "DH-0092",
+   "residentId": "maya",
+   "kind": "butts",
+   "date": "2026-07-25",
+   "reward": 10
+  },
+  {
+   "id": "DH-0093",
+   "residentId": "omar",
+   "kind": "leaves",
+   "date": "2026-07-25",
+   "reward": 20
+  },
+  {
+   "id": "DH-0094",
+   "residentId": "priya",
+   "kind": "weeds",
+   "date": "2026-07-25",
+   "reward": 20
+  },
+  {
+   "id": "DH-0095",
+   "residentId": "chloe",
+   "kind": "bin",
+   "date": "2026-07-26",
+   "reward": 20
+  },
+  {
+   "id": "DH-0096",
+   "residentId": "jordan",
+   "kind": "couch",
+   "date": "2026-07-26",
+   "reward": 45
+  },
+  {
+   "id": "DH-0097",
+   "residentId": "marcus",
+   "kind": "bin",
+   "date": "2026-07-26",
+   "reward": 10
+  },
+  {
+   "id": "DH-0098",
+   "residentId": "maya",
+   "kind": "leaves",
+   "date": "2026-07-26",
+   "reward": 30
+  },
+  {
+   "id": "DH-0099",
+   "residentId": "naomi",
+   "kind": "flyers",
+   "date": "2026-07-26",
+   "reward": 10
+  },
+  {
+   "id": "DH-0100",
+   "residentId": "noah",
+   "kind": "butts",
+   "date": "2026-07-26",
+   "reward": 15
+  },
+  {
+   "id": "DH-0101",
+   "residentId": "omar",
+   "kind": "litter",
+   "date": "2026-07-26",
+   "reward": 25
+  },
+  {
+   "id": "DH-0102",
+   "residentId": "imani",
+   "kind": "litter",
+   "date": "2026-07-27",
+   "reward": 10
+  },
+  {
+   "id": "DH-0103",
+   "residentId": "jordan",
+   "kind": "beach",
+   "date": "2026-07-27",
+   "reward": 15
+  },
+  {
+   "id": "DH-0104",
+   "residentId": "rosa",
+   "kind": "stickers",
+   "date": "2026-07-27",
+   "reward": 20
+  },
+  {
+   "id": "DH-0105",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-07-27",
+   "reward": 20
+  },
+  {
+   "id": "DH-0106",
+   "residentId": "andre",
+   "kind": "leaves",
+   "date": "2026-07-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0107",
+   "residentId": "diego",
+   "kind": "stickers",
+   "date": "2026-07-28",
+   "reward": 10
+  },
+  {
+   "id": "DH-0108",
+   "residentId": "grace",
+   "kind": "weeds",
+   "date": "2026-07-28",
+   "reward": 15
+  },
+  {
+   "id": "DH-0109",
+   "residentId": "hiro",
+   "kind": "litter",
+   "date": "2026-07-28",
+   "reward": 15
+  },
+  {
+   "id": "DH-0110",
+   "residentId": "isabel",
+   "kind": "leaves",
+   "date": "2026-07-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0111",
+   "residentId": "isabel",
+   "kind": "weeds",
+   "date": "2026-07-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0112",
+   "residentId": "maya",
+   "kind": "litter",
+   "date": "2026-07-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0113",
+   "residentId": "sofia",
+   "kind": "graffiti",
+   "date": "2026-07-28",
+   "reward": 40
+  },
+  {
+   "id": "DH-0114",
+   "residentId": "andre",
+   "kind": "weeds",
+   "date": "2026-07-29",
+   "reward": 20
+  },
+  {
+   "id": "DH-0115",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-07-29",
+   "reward": 20
+  },
+  {
+   "id": "DH-0116",
+   "residentId": "kenji",
+   "kind": "graffiti",
+   "date": "2026-07-29",
+   "reward": 50
+  },
+  {
+   "id": "DH-0117",
+   "residentId": "maya",
+   "kind": "flyers",
+   "date": "2026-07-29",
+   "reward": 10
+  },
+  {
+   "id": "DH-0118",
+   "residentId": "nadia",
+   "kind": "couch",
+   "date": "2026-07-29",
+   "reward": 50
+  },
+  {
+   "id": "DH-0119",
+   "residentId": "noah",
+   "kind": "litter",
+   "date": "2026-07-29",
+   "reward": 20
+  },
+  {
+   "id": "DH-0120",
+   "residentId": "sofia",
+   "kind": "graffiti",
+   "date": "2026-07-29",
+   "reward": 30
+  },
+  {
+   "id": "DH-0121",
+   "residentId": "jordan",
+   "kind": "butts",
+   "date": "2026-07-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0122",
+   "residentId": "lucia",
+   "kind": "litter",
+   "date": "2026-07-30",
+   "reward": 20
+  },
+  {
+   "id": "DH-0123",
+   "residentId": "luis",
+   "kind": "litter",
+   "date": "2026-07-30",
+   "reward": 25
+  },
+  {
+   "id": "DH-0124",
+   "residentId": "marcus",
+   "kind": "weeds",
+   "date": "2026-07-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0125",
+   "residentId": "ruby",
+   "kind": "butts",
+   "date": "2026-07-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0126",
+   "residentId": "fatima",
+   "kind": "couch",
+   "date": "2026-07-31",
+   "reward": 45
+  },
+  {
+   "id": "DH-0127",
+   "residentId": "hiro",
+   "kind": "bin",
+   "date": "2026-07-31",
+   "reward": 20
+  },
+  {
+   "id": "DH-0128",
+   "residentId": "jordan",
+   "kind": "graffiti",
+   "date": "2026-07-31",
+   "reward": 45
+  },
+  {
+   "id": "DH-0129",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-07-31",
+   "reward": 10
+  },
+  {
+   "id": "DH-0130",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-07-31",
+   "reward": 20
+  },
+  {
+   "id": "DH-0131",
+   "residentId": "maya",
+   "kind": "butts",
+   "date": "2026-07-31",
+   "reward": 15
+  },
+  {
+   "id": "DH-0132",
+   "residentId": "andre",
+   "kind": "weeds",
+   "date": "2026-08-01",
+   "reward": 15
+  },
+  {
+   "id": "DH-0133",
+   "residentId": "hiro",
+   "kind": "beach",
+   "date": "2026-08-01",
+   "reward": 25
+  },
+  {
+   "id": "DH-0134",
+   "residentId": "lucia",
+   "kind": "litter",
+   "date": "2026-08-01",
+   "reward": 20
+  },
+  {
+   "id": "DH-0135",
+   "residentId": "jordan",
+   "kind": "litter",
+   "date": "2026-08-02",
+   "reward": 10
+  },
+  {
+   "id": "DH-0136",
+   "residentId": "leah",
+   "kind": "weeds",
+   "date": "2026-08-02",
+   "reward": 15
+  },
+  {
+   "id": "DH-0137",
+   "residentId": "lucia",
+   "kind": "leaves",
+   "date": "2026-08-02",
+   "reward": 25
+  },
+  {
+   "id": "DH-0138",
+   "residentId": "sofia",
+   "kind": "branches",
+   "date": "2026-08-02",
+   "reward": 30
+  },
+  {
+   "id": "DH-0139",
+   "residentId": "andre",
+   "kind": "graffiti",
+   "date": "2026-08-03",
+   "reward": 50
+  },
+  {
+   "id": "DH-0140",
+   "residentId": "caleb",
+   "kind": "graffiti",
+   "date": "2026-08-03",
+   "reward": 40
+  },
+  {
+   "id": "DH-0141",
+   "residentId": "luis",
+   "kind": "flyers",
+   "date": "2026-08-03",
+   "reward": 10
+  },
+  {
+   "id": "DH-0142",
+   "residentId": "maya",
+   "kind": "litter",
+   "date": "2026-08-03",
+   "reward": 15
+  },
+  {
+   "id": "DH-0143",
+   "residentId": "maya",
+   "kind": "stickers",
+   "date": "2026-08-03",
+   "reward": 20
+  },
+  {
+   "id": "DH-0144",
+   "residentId": "elena",
+   "kind": "stickers",
+   "date": "2026-08-04",
+   "reward": 10
+  },
+  {
+   "id": "DH-0145",
+   "residentId": "kenji",
+   "kind": "leaves",
+   "date": "2026-08-04",
+   "reward": 30
+  },
+  {
+   "id": "DH-0146",
+   "residentId": "kenji",
+   "kind": "weeds",
+   "date": "2026-08-04",
+   "reward": 20
+  },
+  {
+   "id": "DH-0147",
+   "residentId": "omar",
+   "kind": "flyers",
+   "date": "2026-08-04",
+   "reward": 15
+  },
+  {
+   "id": "DH-0148",
+   "residentId": "chloe",
+   "kind": "bags",
+   "date": "2026-08-05",
+   "reward": 20
+  },
+  {
+   "id": "DH-0149",
+   "residentId": "elena",
+   "kind": "flyers",
+   "date": "2026-08-05",
+   "reward": 15
+  },
+  {
+   "id": "DH-0150",
+   "residentId": "luis",
+   "kind": "bin",
+   "date": "2026-08-05",
+   "reward": 15
+  },
+  {
+   "id": "DH-0151",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-08-05",
+   "reward": 10
+  },
+  {
+   "id": "DH-0152",
+   "residentId": "isabel",
+   "kind": "bags",
+   "date": "2026-08-06",
+   "reward": 20
+  },
+  {
+   "id": "DH-0153",
+   "residentId": "mateo",
+   "kind": "mattress",
+   "date": "2026-08-06",
+   "reward": 45
+  },
+  {
+   "id": "DH-0154",
+   "residentId": "omar",
+   "kind": "beach",
+   "date": "2026-08-06",
+   "reward": 30
+  },
+  {
+   "id": "DH-0155",
+   "residentId": "ruby",
+   "kind": "bags",
+   "date": "2026-08-06",
+   "reward": 15
+  },
+  {
+   "id": "DH-0156",
+   "residentId": "andre",
+   "kind": "litter",
+   "date": "2026-08-07",
+   "reward": 20
+  },
+  {
+   "id": "DH-0157",
+   "residentId": "leah",
+   "kind": "bin",
+   "date": "2026-08-07",
+   "reward": 15
+  },
+  {
+   "id": "DH-0158",
+   "residentId": "omar",
+   "kind": "drain",
+   "date": "2026-08-07",
+   "reward": 35
+  },
+  {
+   "id": "DH-0159",
+   "residentId": "priya",
+   "kind": "litter",
+   "date": "2026-08-07",
+   "reward": 10
+  },
+  {
+   "id": "DH-0160",
+   "residentId": "sofia",
+   "kind": "boxes",
+   "date": "2026-08-07",
+   "reward": 20
+  },
+  {
+   "id": "DH-0161",
+   "residentId": "fatima",
+   "kind": "litter",
+   "date": "2026-08-08",
+   "reward": 25
+  },
+  {
+   "id": "DH-0162",
+   "residentId": "imani",
+   "kind": "graffiti",
+   "date": "2026-08-08",
+   "reward": 35
+  },
+  {
+   "id": "DH-0163",
+   "residentId": "marcus",
+   "kind": "graffiti",
+   "date": "2026-08-08",
+   "reward": 50
+  },
+  {
+   "id": "DH-0164",
+   "residentId": "hiro",
+   "kind": "bin",
+   "date": "2026-08-09",
+   "reward": 20
+  },
+  {
+   "id": "DH-0165",
+   "residentId": "jordan",
+   "kind": "leaves",
+   "date": "2026-08-09",
+   "reward": 20
+  },
+  {
+   "id": "DH-0166",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-08-09",
+   "reward": 25
+  },
+  {
+   "id": "DH-0167",
+   "residentId": "luis",
+   "kind": "butts",
+   "date": "2026-08-09",
+   "reward": 15
+  },
+  {
+   "id": "DH-0168",
+   "residentId": "mateo",
+   "kind": "graffiti",
+   "date": "2026-08-09",
+   "reward": 35
+  },
+  {
+   "id": "DH-0169",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-08-09",
+   "reward": 15
+  },
+  {
+   "id": "DH-0170",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-08-10",
+   "reward": 25
+  },
+  {
+   "id": "DH-0171",
+   "residentId": "maya",
+   "kind": "beach",
+   "date": "2026-08-10",
+   "reward": 15
+  },
+  {
+   "id": "DH-0172",
+   "residentId": "maya",
+   "kind": "beach",
+   "date": "2026-08-10",
+   "reward": 15
+  },
+  {
+   "id": "DH-0173",
+   "residentId": "maya",
+   "kind": "graffiti",
+   "date": "2026-08-10",
+   "reward": 35
+  },
+  {
+   "id": "DH-0174",
+   "residentId": "naomi",
+   "kind": "debris",
+   "date": "2026-08-10",
+   "reward": 45
+  },
+  {
+   "id": "DH-0175",
+   "residentId": "samir",
+   "kind": "flyers",
+   "date": "2026-08-10",
+   "reward": 15
+  },
+  {
+   "id": "DH-0176",
+   "residentId": "sofia",
+   "kind": "leaves",
+   "date": "2026-08-10",
+   "reward": 25
+  },
+  {
+   "id": "DH-0177",
+   "residentId": "grace",
+   "kind": "litter",
+   "date": "2026-08-11",
+   "reward": 10
+  },
+  {
+   "id": "DH-0178",
+   "residentId": "isabel",
+   "kind": "flyers",
+   "date": "2026-08-11",
+   "reward": 10
+  },
+  {
+   "id": "DH-0179",
+   "residentId": "mateo",
+   "kind": "graffiti",
+   "date": "2026-08-11",
+   "reward": 35
+  },
+  {
+   "id": "DH-0180",
+   "residentId": "maya",
+   "kind": "butts",
+   "date": "2026-08-12",
+   "reward": 10
+  },
+  {
+   "id": "DH-0181",
+   "residentId": "nadia",
+   "kind": "beach",
+   "date": "2026-08-12",
+   "reward": 30
+  },
+  {
+   "id": "DH-0182",
+   "residentId": "dante",
+   "kind": "leaves",
+   "date": "2026-08-13",
+   "reward": 25
+  },
+  {
+   "id": "DH-0183",
+   "residentId": "elena",
+   "kind": "bin",
+   "date": "2026-08-13",
+   "reward": 15
+  },
+  {
+   "id": "DH-0184",
+   "residentId": "grace",
+   "kind": "leaves",
+   "date": "2026-08-13",
+   "reward": 15
+  },
+  {
+   "id": "DH-0185",
+   "residentId": "hiro",
+   "kind": "leaves",
+   "date": "2026-08-13",
+   "reward": 20
+  },
+  {
+   "id": "DH-0186",
+   "residentId": "jordan",
+   "kind": "weeds",
+   "date": "2026-08-13",
+   "reward": 20
+  },
+  {
+   "id": "DH-0187",
+   "residentId": "marcus",
+   "kind": "branches",
+   "date": "2026-08-13",
+   "reward": 30
+  },
+  {
+   "id": "DH-0188",
+   "residentId": "priya",
+   "kind": "bags",
+   "date": "2026-08-13",
+   "reward": 25
+  },
+  {
+   "id": "DH-0189",
+   "residentId": "ruby",
+   "kind": "litter",
+   "date": "2026-08-13",
+   "reward": 15
+  },
+  {
+   "id": "DH-0190",
+   "residentId": "mateo",
+   "kind": "bin",
+   "date": "2026-08-14",
+   "reward": 15
+  },
+  {
+   "id": "DH-0191",
+   "residentId": "noah",
+   "kind": "branches",
+   "date": "2026-08-14",
+   "reward": 30
+  },
+  {
+   "id": "DH-0192",
+   "residentId": "theo",
+   "kind": "beach",
+   "date": "2026-08-14",
+   "reward": 30
+  },
+  {
+   "id": "DH-0193",
+   "residentId": "kenji",
+   "kind": "leaves",
+   "date": "2026-08-15",
+   "reward": 20
+  },
+  {
+   "id": "DH-0194",
+   "residentId": "marcus",
+   "kind": "bags",
+   "date": "2026-08-15",
+   "reward": 20
+  },
+  {
+   "id": "DH-0195",
+   "residentId": "mateo",
+   "kind": "leaves",
+   "date": "2026-08-15",
+   "reward": 20
+  },
+  {
+   "id": "DH-0196",
+   "residentId": "mei",
+   "kind": "weeds",
+   "date": "2026-08-15",
+   "reward": 20
+  },
+  {
+   "id": "DH-0197",
+   "residentId": "caleb",
+   "kind": "graffiti",
+   "date": "2026-08-16",
+   "reward": 30
+  },
+  {
+   "id": "DH-0198",
+   "residentId": "fatima",
+   "kind": "litter",
+   "date": "2026-08-16",
+   "reward": 10
+  },
+  {
+   "id": "DH-0199",
+   "residentId": "luis",
+   "kind": "debris",
+   "date": "2026-08-16",
+   "reward": 60
+  },
+  {
+   "id": "DH-0200",
+   "residentId": "maya",
+   "kind": "litter",
+   "date": "2026-08-16",
+   "reward": 25
+  },
+  {
+   "id": "DH-0201",
+   "residentId": "elena",
+   "kind": "graffiti",
+   "date": "2026-08-17",
+   "reward": 50
+  },
+  {
+   "id": "DH-0202",
+   "residentId": "fatima",
+   "kind": "weeds",
+   "date": "2026-08-17",
+   "reward": 20
+  },
+  {
+   "id": "DH-0203",
+   "residentId": "kenji",
+   "kind": "bin",
+   "date": "2026-08-17",
+   "reward": 15
+  },
+  {
+   "id": "DH-0204",
+   "residentId": "leah",
+   "kind": "litter",
+   "date": "2026-08-17",
+   "reward": 10
+  },
+  {
+   "id": "DH-0205",
+   "residentId": "marcus",
+   "kind": "leaves",
+   "date": "2026-08-17",
+   "reward": 20
+  },
+  {
+   "id": "DH-0206",
+   "residentId": "noah",
+   "kind": "beach",
+   "date": "2026-08-17",
+   "reward": 20
+  },
+  {
+   "id": "DH-0207",
+   "residentId": "imani",
+   "kind": "leaves",
+   "date": "2026-08-18",
+   "reward": 25
+  },
+  {
+   "id": "DH-0208",
+   "residentId": "imani",
+   "kind": "litter",
+   "date": "2026-08-18",
+   "reward": 20
+  },
+  {
+   "id": "DH-0209",
+   "residentId": "mei",
+   "kind": "weeds",
+   "date": "2026-08-18",
+   "reward": 25
+  },
+  {
+   "id": "DH-0210",
+   "residentId": "sofia",
+   "kind": "bin",
+   "date": "2026-08-18",
+   "reward": 20
+  },
+  {
+   "id": "DH-0211",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-08-18",
+   "reward": 20
+  },
+  {
+   "id": "DH-0212",
+   "residentId": "dante",
+   "kind": "leaves",
+   "date": "2026-08-19",
+   "reward": 30
+  },
+  {
+   "id": "DH-0213",
+   "residentId": "ethan",
+   "kind": "litter",
+   "date": "2026-08-19",
+   "reward": 25
+  },
+  {
+   "id": "DH-0214",
+   "residentId": "noah",
+   "kind": "butts",
+   "date": "2026-08-19",
+   "reward": 15
+  },
+  {
+   "id": "DH-0215",
+   "residentId": "dante",
+   "kind": "litter",
+   "date": "2026-08-20",
+   "reward": 25
+  },
+  {
+   "id": "DH-0216",
+   "residentId": "diego",
+   "kind": "bags",
+   "date": "2026-08-20",
+   "reward": 25
+  },
+  {
+   "id": "DH-0217",
+   "residentId": "andre",
+   "kind": "leaves",
+   "date": "2026-08-21",
+   "reward": 20
+  },
+  {
+   "id": "DH-0218",
+   "residentId": "elena",
+   "kind": "litter",
+   "date": "2026-08-21",
+   "reward": 10
+  },
+  {
+   "id": "DH-0219",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-08-21",
+   "reward": 15
+  },
+  {
+   "id": "DH-0220",
+   "residentId": "noah",
+   "kind": "butts",
+   "date": "2026-08-21",
+   "reward": 10
+  },
+  {
+   "id": "DH-0221",
+   "residentId": "priya",
+   "kind": "beach",
+   "date": "2026-08-21",
+   "reward": 30
+  },
+  {
+   "id": "DH-0222",
+   "residentId": "theo",
+   "kind": "beach",
+   "date": "2026-08-21",
+   "reward": 25
+  },
+  {
+   "id": "DH-0223",
+   "residentId": "caleb",
+   "kind": "drain",
+   "date": "2026-08-22",
+   "reward": 35
+  },
+  {
+   "id": "DH-0224",
+   "residentId": "diego",
+   "kind": "weeds",
+   "date": "2026-08-22",
+   "reward": 25
+  },
+  {
+   "id": "DH-0225",
+   "residentId": "ethan",
+   "kind": "litter",
+   "date": "2026-08-22",
+   "reward": 10
+  },
+  {
+   "id": "DH-0226",
+   "residentId": "lucia",
+   "kind": "weeds",
+   "date": "2026-08-22",
+   "reward": 15
+  },
+  {
+   "id": "DH-0227",
+   "residentId": "diego",
+   "kind": "bin",
+   "date": "2026-08-23",
+   "reward": 10
+  },
+  {
+   "id": "DH-0228",
+   "residentId": "elena",
+   "kind": "litter",
+   "date": "2026-08-23",
+   "reward": 15
+  },
+  {
+   "id": "DH-0229",
+   "residentId": "marcus",
+   "kind": "mattress",
+   "date": "2026-08-23",
+   "reward": 40
+  },
+  {
+   "id": "DH-0230",
+   "residentId": "hiro",
+   "kind": "weeds",
+   "date": "2026-08-24",
+   "reward": 25
+  },
+  {
+   "id": "DH-0231",
+   "residentId": "leah",
+   "kind": "beach",
+   "date": "2026-08-24",
+   "reward": 30
+  },
+  {
+   "id": "DH-0232",
+   "residentId": "lucia",
+   "kind": "litter",
+   "date": "2026-08-24",
+   "reward": 25
+  },
+  {
+   "id": "DH-0233",
+   "residentId": "zoe",
+   "kind": "branches",
+   "date": "2026-08-24",
+   "reward": 30
+  },
+  {
+   "id": "DH-0234",
+   "residentId": "elena",
+   "kind": "butts",
+   "date": "2026-08-25",
+   "reward": 15
+  },
+  {
+   "id": "DH-0235",
+   "residentId": "grace",
+   "kind": "drain",
+   "date": "2026-08-25",
+   "reward": 30
+  },
+  {
+   "id": "DH-0236",
+   "residentId": "hiro",
+   "kind": "bin",
+   "date": "2026-08-25",
+   "reward": 15
+  },
+  {
+   "id": "DH-0237",
+   "residentId": "maya",
+   "kind": "stickers",
+   "date": "2026-08-25",
+   "reward": 20
+  },
+  {
+   "id": "DH-0238",
+   "residentId": "noah",
+   "kind": "litter",
+   "date": "2026-08-25",
+   "reward": 15
+  },
+  {
+   "id": "DH-0239",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-08-26",
+   "reward": 15
+  },
+  {
+   "id": "DH-0240",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-08-26",
+   "reward": 15
+  },
+  {
+   "id": "DH-0241",
+   "residentId": "owen",
+   "kind": "beach",
+   "date": "2026-08-26",
+   "reward": 30
+  },
+  {
+   "id": "DH-0242",
+   "residentId": "diego",
+   "kind": "litter",
+   "date": "2026-08-27",
+   "reward": 25
+  },
+  {
+   "id": "DH-0243",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-08-27",
+   "reward": 15
+  },
+  {
+   "id": "DH-0244",
+   "residentId": "fatima",
+   "kind": "weeds",
+   "date": "2026-08-27",
+   "reward": 20
+  },
+  {
+   "id": "DH-0245",
+   "residentId": "isabel",
+   "kind": "drain",
+   "date": "2026-08-27",
+   "reward": 30
+  },
+  {
+   "id": "DH-0246",
+   "residentId": "ruby",
+   "kind": "bin",
+   "date": "2026-08-27",
+   "reward": 10
+  },
+  {
+   "id": "DH-0247",
+   "residentId": "dante",
+   "kind": "bin",
+   "date": "2026-08-28",
+   "reward": 20
+  },
+  {
+   "id": "DH-0248",
+   "residentId": "grace",
+   "kind": "litter",
+   "date": "2026-08-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0249",
+   "residentId": "luis",
+   "kind": "graffiti",
+   "date": "2026-08-28",
+   "reward": 45
+  },
+  {
+   "id": "DH-0250",
+   "residentId": "maya",
+   "kind": "weeds",
+   "date": "2026-08-28",
+   "reward": 15
+  },
+  {
+   "id": "DH-0251",
+   "residentId": "ruby",
+   "kind": "litter",
+   "date": "2026-08-28",
+   "reward": 15
+  },
+  {
+   "id": "DH-0252",
+   "residentId": "samir",
+   "kind": "litter",
+   "date": "2026-08-28",
+   "reward": 15
+  },
+  {
+   "id": "DH-0253",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-08-29",
+   "reward": 20
+  },
+  {
+   "id": "DH-0254",
+   "residentId": "imani",
+   "kind": "bin",
+   "date": "2026-08-29",
+   "reward": 20
+  },
+  {
+   "id": "DH-0255",
+   "residentId": "isabel",
+   "kind": "stickers",
+   "date": "2026-08-29",
+   "reward": 15
+  },
+  {
+   "id": "DH-0256",
+   "residentId": "leah",
+   "kind": "drain",
+   "date": "2026-08-29",
+   "reward": 25
+  },
+  {
+   "id": "DH-0257",
+   "residentId": "marcus",
+   "kind": "boxes",
+   "date": "2026-08-29",
+   "reward": 25
+  },
+  {
+   "id": "DH-0258",
+   "residentId": "noah",
+   "kind": "litter",
+   "date": "2026-08-29",
+   "reward": 10
+  },
+  {
+   "id": "DH-0259",
+   "residentId": "noah",
+   "kind": "tires",
+   "date": "2026-08-29",
+   "reward": 30
+  },
+  {
+   "id": "DH-0260",
+   "residentId": "leah",
+   "kind": "bags",
+   "date": "2026-08-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0261",
+   "residentId": "lucia",
+   "kind": "butts",
+   "date": "2026-08-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0262",
+   "residentId": "marcus",
+   "kind": "beach",
+   "date": "2026-08-30",
+   "reward": 20
+  },
+  {
+   "id": "DH-0263",
+   "residentId": "naomi",
+   "kind": "butts",
+   "date": "2026-08-30",
+   "reward": 10
+  },
+  {
+   "id": "DH-0264",
+   "residentId": "omar",
+   "kind": "branches",
+   "date": "2026-08-30",
+   "reward": 20
+  },
+  {
+   "id": "DH-0265",
+   "residentId": "caleb",
+   "kind": "flyers",
+   "date": "2026-08-31",
+   "reward": 10
+  },
+  {
+   "id": "DH-0266",
+   "residentId": "maya",
+   "kind": "flyers",
+   "date": "2026-08-31",
+   "reward": 10
+  },
+  {
+   "id": "DH-0267",
+   "residentId": "noah",
+   "kind": "litter",
+   "date": "2026-08-31",
+   "reward": 20
+  },
+  {
+   "id": "DH-0268",
+   "residentId": "samir",
+   "kind": "weeds",
+   "date": "2026-08-31",
+   "reward": 15
+  },
+  {
+   "id": "DH-0269",
+   "residentId": "diego",
+   "kind": "bags",
+   "date": "2026-09-01",
+   "reward": 25
+  },
+  {
+   "id": "DH-0270",
+   "residentId": "elena",
+   "kind": "litter",
+   "date": "2026-09-01",
+   "reward": 15
+  },
+  {
+   "id": "DH-0271",
+   "residentId": "fatima",
+   "kind": "butts",
+   "date": "2026-09-01",
+   "reward": 10
+  },
+  {
+   "id": "DH-0272",
+   "residentId": "naomi",
+   "kind": "litter",
+   "date": "2026-09-01",
+   "reward": 15
+  },
+  {
+   "id": "DH-0273",
+   "residentId": "sofia",
+   "kind": "boxes",
+   "date": "2026-09-01",
+   "reward": 15
+  },
+  {
+   "id": "DH-0274",
+   "residentId": "andre",
+   "kind": "bin",
+   "date": "2026-09-02",
+   "reward": 20
+  },
+  {
+   "id": "DH-0275",
+   "residentId": "hiro",
+   "kind": "weeds",
+   "date": "2026-09-02",
+   "reward": 25
+  },
+  {
+   "id": "DH-0276",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-09-02",
+   "reward": 20
+  },
+  {
+   "id": "DH-0277",
+   "residentId": "leah",
+   "kind": "beach",
+   "date": "2026-09-02",
+   "reward": 15
+  },
+  {
+   "id": "DH-0278",
+   "residentId": "maya",
+   "kind": "beach",
+   "date": "2026-09-02",
+   "reward": 15
+  },
+  {
+   "id": "DH-0279",
+   "residentId": "maya",
+   "kind": "flyers",
+   "date": "2026-09-02",
+   "reward": 10
+  },
+  {
+   "id": "DH-0280",
+   "residentId": "omar",
+   "kind": "couch",
+   "date": "2026-09-02",
+   "reward": 50
+  },
+  {
+   "id": "DH-0281",
+   "residentId": "omar",
+   "kind": "litter",
+   "date": "2026-09-02",
+   "reward": 20
+  },
+  {
+   "id": "DH-0282",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-09-02",
+   "reward": 10
+  },
+  {
+   "id": "DH-0283",
+   "residentId": "zoe",
+   "kind": "litter",
+   "date": "2026-09-02",
+   "reward": 10
+  },
+  {
+   "id": "DH-0284",
+   "residentId": "fatima",
+   "kind": "bin",
+   "date": "2026-09-03",
+   "reward": 20
+  },
+  {
+   "id": "DH-0285",
+   "residentId": "kenji",
+   "kind": "leaves",
+   "date": "2026-09-03",
+   "reward": 15
+  },
+  {
+   "id": "DH-0286",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-09-03",
+   "reward": 15
+  },
+  {
+   "id": "DH-0287",
+   "residentId": "owen",
+   "kind": "flyers",
+   "date": "2026-09-03",
+   "reward": 10
+  },
+  {
+   "id": "DH-0288",
+   "residentId": "isabel",
+   "kind": "flyers",
+   "date": "2026-09-04",
+   "reward": 15
+  },
+  {
+   "id": "DH-0289",
+   "residentId": "nadia",
+   "kind": "stickers",
+   "date": "2026-09-04",
+   "reward": 15
+  },
+  {
+   "id": "DH-0290",
+   "residentId": "sofia",
+   "kind": "beach",
+   "date": "2026-09-04",
+   "reward": 20
+  },
+  {
+   "id": "DH-0291",
+   "residentId": "grace",
+   "kind": "weeds",
+   "date": "2026-09-05",
+   "reward": 25
+  },
+  {
+   "id": "DH-0292",
+   "residentId": "kenji",
+   "kind": "beach",
+   "date": "2026-09-05",
+   "reward": 15
+  },
+  {
+   "id": "DH-0293",
+   "residentId": "noah",
+   "kind": "butts",
+   "date": "2026-09-05",
+   "reward": 15
+  },
+  {
+   "id": "DH-0294",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-06",
+   "reward": 15
+  },
+  {
+   "id": "DH-0295",
+   "residentId": "lucia",
+   "kind": "beach",
+   "date": "2026-09-06",
+   "reward": 15
+  },
+  {
+   "id": "DH-0296",
+   "residentId": "nadia",
+   "kind": "bin",
+   "date": "2026-09-06",
+   "reward": 15
+  },
+  {
+   "id": "DH-0297",
+   "residentId": "omar",
+   "kind": "stickers",
+   "date": "2026-09-06",
+   "reward": 20
+  },
+  {
+   "id": "DH-0298",
+   "residentId": "samir",
+   "kind": "stickers",
+   "date": "2026-09-06",
+   "reward": 15
+  },
+  {
+   "id": "DH-0299",
+   "residentId": "isabel",
+   "kind": "weeds",
+   "date": "2026-09-07",
+   "reward": 15
+  },
+  {
+   "id": "DH-0300",
+   "residentId": "jordan",
+   "kind": "bin",
+   "date": "2026-09-07",
+   "reward": 15
+  },
+  {
+   "id": "DH-0301",
+   "residentId": "lucia",
+   "kind": "weeds",
+   "date": "2026-09-07",
+   "reward": 20
+  },
+  {
+   "id": "DH-0302",
+   "residentId": "luis",
+   "kind": "leaves",
+   "date": "2026-09-07",
+   "reward": 30
+  },
+  {
+   "id": "DH-0303",
+   "residentId": "nadia",
+   "kind": "beach",
+   "date": "2026-09-07",
+   "reward": 25
+  },
+  {
+   "id": "DH-0304",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-09-07",
+   "reward": 25
+  },
+  {
+   "id": "DH-0305",
+   "residentId": "amara",
+   "kind": "weeds",
+   "date": "2026-09-08",
+   "reward": 15
+  },
+  {
+   "id": "DH-0306",
+   "residentId": "samir",
+   "kind": "branches",
+   "date": "2026-09-08",
+   "reward": 20
+  },
+  {
+   "id": "DH-0307",
+   "residentId": "diego",
+   "kind": "leaves",
+   "date": "2026-09-09",
+   "reward": 20
+  },
+  {
+   "id": "DH-0308",
+   "residentId": "grace",
+   "kind": "weeds",
+   "date": "2026-09-09",
+   "reward": 25
+  },
+  {
+   "id": "DH-0309",
+   "residentId": "diego",
+   "kind": "drain",
+   "date": "2026-09-10",
+   "reward": 35
+  },
+  {
+   "id": "DH-0310",
+   "residentId": "kenji",
+   "kind": "beach",
+   "date": "2026-09-10",
+   "reward": 30
+  },
+  {
+   "id": "DH-0311",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-10",
+   "reward": 25
+  },
+  {
+   "id": "DH-0312",
+   "residentId": "lucia",
+   "kind": "litter",
+   "date": "2026-09-10",
+   "reward": 20
+  },
+  {
+   "id": "DH-0313",
+   "residentId": "luis",
+   "kind": "stickers",
+   "date": "2026-09-10",
+   "reward": 10
+  },
+  {
+   "id": "DH-0314",
+   "residentId": "naomi",
+   "kind": "bin",
+   "date": "2026-09-10",
+   "reward": 10
+  },
+  {
+   "id": "DH-0315",
+   "residentId": "imani",
+   "kind": "stickers",
+   "date": "2026-09-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0316",
+   "residentId": "jordan",
+   "kind": "litter",
+   "date": "2026-09-11",
+   "reward": 20
+  },
+  {
+   "id": "DH-0317",
+   "residentId": "jordan",
+   "kind": "litter",
+   "date": "2026-09-11",
+   "reward": 25
+  },
+  {
+   "id": "DH-0318",
+   "residentId": "mateo",
+   "kind": "butts",
+   "date": "2026-09-11",
+   "reward": 10
+  },
+  {
+   "id": "DH-0319",
+   "residentId": "sofia",
+   "kind": "litter",
+   "date": "2026-09-11",
+   "reward": 25
+  },
+  {
+   "id": "DH-0320",
+   "residentId": "dante",
+   "kind": "bin",
+   "date": "2026-09-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0321",
+   "residentId": "elena",
+   "kind": "butts",
+   "date": "2026-09-12",
+   "reward": 15
+  },
+  {
+   "id": "DH-0322",
+   "residentId": "elena",
+   "kind": "litter",
+   "date": "2026-09-12",
+   "reward": 10
+  },
+  {
+   "id": "DH-0323",
+   "residentId": "kenji",
+   "kind": "couch",
+   "date": "2026-09-12",
+   "reward": 45
+  },
+  {
+   "id": "DH-0324",
+   "residentId": "maya",
+   "kind": "tires",
+   "date": "2026-09-12",
+   "reward": 30
+  },
+  {
+   "id": "DH-0325",
+   "residentId": "luis",
+   "kind": "flyers",
+   "date": "2026-09-13",
+   "reward": 10
+  },
+  {
+   "id": "DH-0326",
+   "residentId": "hiro",
+   "kind": "bags",
+   "date": "2026-09-14",
+   "reward": 25
+  },
+  {
+   "id": "DH-0327",
+   "residentId": "isabel",
+   "kind": "butts",
+   "date": "2026-09-14",
+   "reward": 10
+  },
+  {
+   "id": "DH-0328",
+   "residentId": "lucia",
+   "kind": "drain",
+   "date": "2026-09-14",
+   "reward": 25
+  },
+  {
+   "id": "DH-0329",
+   "residentId": "wyatt",
+   "kind": "beach",
+   "date": "2026-09-14",
+   "reward": 20
+  },
+  {
+   "id": "DH-0330",
+   "residentId": "zoe",
+   "kind": "beach",
+   "date": "2026-09-14",
+   "reward": 20
+  },
+  {
+   "id": "DH-0331",
+   "residentId": "jordan",
+   "kind": "litter",
+   "date": "2026-09-15",
+   "reward": 10
+  },
+  {
+   "id": "DH-0332",
+   "residentId": "leah",
+   "kind": "litter",
+   "date": "2026-09-15",
+   "reward": 15
+  },
+  {
+   "id": "DH-0333",
+   "residentId": "marcus",
+   "kind": "bags",
+   "date": "2026-09-15",
+   "reward": 15
+  },
+  {
+   "id": "DH-0334",
+   "residentId": "mateo",
+   "kind": "bin",
+   "date": "2026-09-15",
+   "reward": 15
+  },
+  {
+   "id": "DH-0335",
+   "residentId": "mei",
+   "kind": "beach",
+   "date": "2026-09-15",
+   "reward": 25
+  },
+  {
+   "id": "DH-0336",
+   "residentId": "owen",
+   "kind": "litter",
+   "date": "2026-09-15",
+   "reward": 10
+  },
+  {
+   "id": "DH-0337",
+   "residentId": "wyatt",
+   "kind": "drain",
+   "date": "2026-09-15",
+   "reward": 35
+  },
+  {
+   "id": "DH-0338",
+   "residentId": "elena",
+   "kind": "weeds",
+   "date": "2026-09-16",
+   "reward": 25
+  },
+  {
+   "id": "DH-0339",
+   "residentId": "hiro",
+   "kind": "bin",
+   "date": "2026-09-16",
+   "reward": 15
+  },
+  {
+   "id": "DH-0340",
+   "residentId": "kenji",
+   "kind": "debris",
+   "date": "2026-09-16",
+   "reward": 50
+  },
+  {
+   "id": "DH-0341",
+   "residentId": "leah",
+   "kind": "beach",
+   "date": "2026-09-16",
+   "reward": 30
+  },
+  {
+   "id": "DH-0342",
+   "residentId": "maya",
+   "kind": "drain",
+   "date": "2026-09-16",
+   "reward": 35
+  },
+  {
+   "id": "DH-0343",
+   "residentId": "nadia",
+   "kind": "tires",
+   "date": "2026-09-16",
+   "reward": 35
+  },
+  {
+   "id": "DH-0344",
+   "residentId": "ruby",
+   "kind": "butts",
+   "date": "2026-09-16",
+   "reward": 15
+  },
+  {
+   "id": "DH-0345",
+   "residentId": "caleb",
+   "kind": "bags",
+   "date": "2026-09-17",
+   "reward": 15
+  },
+  {
+   "id": "DH-0346",
+   "residentId": "grace",
+   "kind": "graffiti",
+   "date": "2026-09-17",
+   "reward": 50
+  },
+  {
+   "id": "DH-0347",
+   "residentId": "hannah",
+   "kind": "beach",
+   "date": "2026-09-17",
+   "reward": 15
+  },
+  {
+   "id": "DH-0348",
+   "residentId": "isabel",
+   "kind": "beach",
+   "date": "2026-09-17",
+   "reward": 25
+  },
+  {
+   "id": "DH-0349",
+   "residentId": "kenji",
+   "kind": "leaves",
+   "date": "2026-09-17",
+   "reward": 25
+  },
+  {
+   "id": "DH-0350",
+   "residentId": "mei",
+   "kind": "bin",
+   "date": "2026-09-17",
+   "reward": 15
+  },
+  {
+   "id": "DH-0351",
+   "residentId": "imani",
+   "kind": "branches",
+   "date": "2026-09-18",
+   "reward": 20
+  },
+  {
+   "id": "DH-0352",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-09-18",
+   "reward": 25
+  },
+  {
+   "id": "DH-0353",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-18",
+   "reward": 10
+  },
+  {
+   "id": "DH-0354",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-18",
+   "reward": 10
+  },
+  {
+   "id": "DH-0355",
+   "residentId": "diego",
+   "kind": "butts",
+   "date": "2026-09-19",
+   "reward": 10
+  },
+  {
+   "id": "DH-0356",
+   "residentId": "felix",
+   "kind": "flyers",
+   "date": "2026-09-19",
+   "reward": 10
+  },
+  {
+   "id": "DH-0357",
+   "residentId": "isabel",
+   "kind": "litter",
+   "date": "2026-09-19",
+   "reward": 10
+  },
+  {
+   "id": "DH-0358",
+   "residentId": "ruby",
+   "kind": "tires",
+   "date": "2026-09-19",
+   "reward": 30
+  },
+  {
+   "id": "DH-0359",
+   "residentId": "theo",
+   "kind": "bin",
+   "date": "2026-09-19",
+   "reward": 10
+  },
+  {
+   "id": "DH-0360",
+   "residentId": "zoe",
+   "kind": "beach",
+   "date": "2026-09-19",
+   "reward": 25
+  },
+  {
+   "id": "DH-0361",
+   "residentId": "dante",
+   "kind": "branches",
+   "date": "2026-09-20",
+   "reward": 30
+  },
+  {
+   "id": "DH-0362",
+   "residentId": "isabel",
+   "kind": "stickers",
+   "date": "2026-09-20",
+   "reward": 20
+  },
+  {
+   "id": "DH-0363",
+   "residentId": "lucia",
+   "kind": "branches",
+   "date": "2026-09-20",
+   "reward": 20
+  },
+  {
+   "id": "DH-0364",
+   "residentId": "luis",
+   "kind": "branches",
+   "date": "2026-09-20",
+   "reward": 30
+  },
+  {
+   "id": "DH-0365",
+   "residentId": "sofia",
+   "kind": "boxes",
+   "date": "2026-09-20",
+   "reward": 15
+  },
+  {
+   "id": "DH-0366",
+   "residentId": "andre",
+   "kind": "beach",
+   "date": "2026-09-21",
+   "reward": 15
+  },
+  {
+   "id": "DH-0367",
+   "residentId": "andre",
+   "kind": "litter",
+   "date": "2026-09-21",
+   "reward": 25
+  },
+  {
+   "id": "DH-0368",
+   "residentId": "andre",
+   "kind": "weeds",
+   "date": "2026-09-21",
+   "reward": 15
+  },
+  {
+   "id": "DH-0369",
+   "residentId": "diego",
+   "kind": "boxes",
+   "date": "2026-09-21",
+   "reward": 15
+  },
+  {
+   "id": "DH-0370",
+   "residentId": "omar",
+   "kind": "debris",
+   "date": "2026-09-21",
+   "reward": 60
+  },
+  {
+   "id": "DH-0371",
+   "residentId": "theo",
+   "kind": "bin",
+   "date": "2026-09-21",
+   "reward": 10
+  },
+  {
+   "id": "DH-0372",
+   "residentId": "ethan",
+   "kind": "boxes",
+   "date": "2026-09-22",
+   "reward": 25
+  },
+  {
+   "id": "DH-0373",
+   "residentId": "luis",
+   "kind": "litter",
+   "date": "2026-09-22",
+   "reward": 25
+  },
+  {
+   "id": "DH-0374",
+   "residentId": "rosa",
+   "kind": "butts",
+   "date": "2026-09-22",
+   "reward": 10
+  },
+  {
+   "id": "DH-0375",
+   "residentId": "sofia",
+   "kind": "bin",
+   "date": "2026-09-22",
+   "reward": 10
+  },
+  {
+   "id": "DH-0376",
+   "residentId": "fatima",
+   "kind": "bags",
+   "date": "2026-09-23",
+   "reward": 20
+  },
+  {
+   "id": "DH-0377",
+   "residentId": "imani",
+   "kind": "litter",
+   "date": "2026-09-23",
+   "reward": 15
+  },
+  {
+   "id": "DH-0378",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-09-23",
+   "reward": 15
+  },
+  {
+   "id": "DH-0379",
+   "residentId": "maya",
+   "kind": "bags",
+   "date": "2026-09-23",
+   "reward": 25
+  },
+  {
+   "id": "DH-0380",
+   "residentId": "imani",
+   "kind": "litter",
+   "date": "2026-09-24",
+   "reward": 20
+  },
+  {
+   "id": "DH-0381",
+   "residentId": "marcus",
+   "kind": "weeds",
+   "date": "2026-09-24",
+   "reward": 25
+  },
+  {
+   "id": "DH-0382",
+   "residentId": "owen",
+   "kind": "stickers",
+   "date": "2026-09-24",
+   "reward": 20
+  },
+  {
+   "id": "DH-0383",
+   "residentId": "andre",
+   "kind": "couch",
+   "date": "2026-09-25",
+   "reward": 45
+  },
+  {
+   "id": "DH-0384",
+   "residentId": "kenji",
+   "kind": "beach",
+   "date": "2026-09-25",
+   "reward": 30
+  },
+  {
+   "id": "DH-0385",
+   "residentId": "priya",
+   "kind": "flyers",
+   "date": "2026-09-25",
+   "reward": 15
+  },
+  {
+   "id": "DH-0386",
+   "residentId": "jordan",
+   "kind": "weeds",
+   "date": "2026-09-26",
+   "reward": 25
+  },
+  {
+   "id": "DH-0387",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-26",
+   "reward": 25
+  },
+  {
+   "id": "DH-0388",
+   "residentId": "owen",
+   "kind": "stickers",
+   "date": "2026-09-26",
+   "reward": 10
+  },
+  {
+   "id": "DH-0389",
+   "residentId": "caleb",
+   "kind": "litter",
+   "date": "2026-09-27",
+   "reward": 25
+  },
+  {
+   "id": "DH-0390",
+   "residentId": "chloe",
+   "kind": "graffiti",
+   "date": "2026-09-27",
+   "reward": 50
+  },
+  {
+   "id": "DH-0391",
+   "residentId": "diego",
+   "kind": "branches",
+   "date": "2026-09-27",
+   "reward": 30
+  },
+  {
+   "id": "DH-0392",
+   "residentId": "hiro",
+   "kind": "butts",
+   "date": "2026-09-27",
+   "reward": 10
+  },
+  {
+   "id": "DH-0393",
+   "residentId": "kenji",
+   "kind": "bags",
+   "date": "2026-09-27",
+   "reward": 15
+  },
+  {
+   "id": "DH-0394",
+   "residentId": "noah",
+   "kind": "drain",
+   "date": "2026-09-27",
+   "reward": 25
+  },
+  {
+   "id": "DH-0395",
+   "residentId": "omar",
+   "kind": "stickers",
+   "date": "2026-09-27",
+   "reward": 10
+  },
+  {
+   "id": "DH-0396",
+   "residentId": "ruby",
+   "kind": "beach",
+   "date": "2026-09-27",
+   "reward": 15
+  },
+  {
+   "id": "DH-0397",
+   "residentId": "ruby",
+   "kind": "beach",
+   "date": "2026-09-27",
+   "reward": 20
+  },
+  {
+   "id": "DH-0398",
+   "residentId": "rosa",
+   "kind": "graffiti",
+   "date": "2026-09-28",
+   "reward": 50
+  },
+  {
+   "id": "DH-0399",
+   "residentId": "tyrone",
+   "kind": "litter",
+   "date": "2026-09-28",
+   "reward": 25
+  },
+  {
+   "id": "DH-0400",
+   "residentId": "isabel",
+   "kind": "weeds",
+   "date": "2026-09-29",
+   "reward": 25
+  },
+  {
+   "id": "DH-0401",
+   "residentId": "kenji",
+   "kind": "litter",
+   "date": "2026-09-29",
+   "reward": 10
+  },
+  {
+   "id": "DH-0402",
+   "residentId": "owen",
+   "kind": "debris",
+   "date": "2026-09-29",
+   "reward": 55
+  },
+  {
+   "id": "DH-0403",
+   "residentId": "zoe",
+   "kind": "litter",
+   "date": "2026-09-29",
+   "reward": 10
+  },
+  {
+   "id": "DH-0404",
+   "residentId": "elena",
+   "kind": "leaves",
+   "date": "2026-09-30",
+   "reward": 20
+  },
+  {
+   "id": "DH-0405",
+   "residentId": "ethan",
+   "kind": "stickers",
+   "date": "2026-09-30",
+   "reward": 10
+  },
+  {
+   "id": "DH-0406",
+   "residentId": "imani",
+   "kind": "flyers",
+   "date": "2026-09-30",
+   "reward": 10
+  },
+  {
+   "id": "DH-0407",
+   "residentId": "imani",
+   "kind": "graffiti",
+   "date": "2026-09-30",
+   "reward": 50
+  },
+  {
+   "id": "DH-0408",
+   "residentId": "mateo",
+   "kind": "litter",
+   "date": "2026-09-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0409",
+   "residentId": "naomi",
+   "kind": "weeds",
+   "date": "2026-09-30",
+   "reward": 20
+  },
+  {
+   "id": "DH-0410",
+   "residentId": "sofia",
+   "kind": "flyers",
+   "date": "2026-09-30",
+   "reward": 15
+  },
+  {
+   "id": "DH-0411",
+   "residentId": "sofia",
+   "kind": "graffiti",
+   "date": "2026-09-30",
+   "reward": 30
+  },
+  {
+   "id": "DH-0412",
+   "residentId": "felix",
+   "kind": "bin",
+   "date": "2026-10-01",
+   "reward": 15
+  },
+  {
+   "id": "DH-0413",
+   "residentId": "leah",
+   "kind": "litter",
+   "date": "2026-10-01",
+   "reward": 10
+  },
+  {
+   "id": "DH-0414",
+   "residentId": "isabel",
+   "kind": "branches",
+   "date": "2026-10-02",
+   "reward": 25
+  },
+  {
+   "id": "DH-0415",
+   "residentId": "maya",
+   "kind": "beach",
+   "date": "2026-10-02",
+   "reward": 20
+  },
+  {
+   "id": "DH-0416",
+   "residentId": "maya",
+   "kind": "flyers",
+   "date": "2026-10-02",
+   "reward": 10
+  },
+  {
+   "id": "DH-0417",
+   "residentId": "wyatt",
+   "kind": "butts",
+   "date": "2026-10-02",
+   "reward": 15
+  },
+  {
+   "id": "DH-0418",
+   "residentId": "diego",
+   "kind": "stickers",
+   "date": "2026-10-03",
+   "reward": 20
+  },
+  {
+   "id": "DH-0419",
+   "residentId": "naomi",
+   "kind": "weeds",
+   "date": "2026-10-03",
+   "reward": 15
+  },
+  {
+   "id": "DH-0420",
+   "residentId": "owen",
+   "kind": "couch",
+   "date": "2026-10-03",
+   "reward": 45
+  },
+  {
+   "id": "DH-0421",
+   "residentId": "priya",
+   "kind": "beach",
+   "date": "2026-10-03",
+   "reward": 30
+  },
+  {
+   "id": "DH-0422",
+   "residentId": "samir",
+   "kind": "drain",
+   "date": "2026-10-03",
+   "reward": 30
+  },
+  {
+   "id": "DH-0423",
+   "residentId": "sofia",
+   "kind": "bags",
+   "date": "2026-10-03",
+   "reward": 20
+  },
+  {
+   "id": "DH-0424",
+   "residentId": "sofia",
+   "kind": "weeds",
+   "date": "2026-10-03",
+   "reward": 20
+  }
+ ]
+}

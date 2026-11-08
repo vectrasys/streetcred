@@ -1,0 +1,328 @@
+/* Экран выбора задания: карта на весь экран, лента кадров, панель задания.
+   Токены — в site.css (:root, блок «Токены интерфейса»): размеры шрифта, отступы, радиусы, три уровня высоты.
+   Исключение из шкалы: подписи на карте и метки сумм (11–12.5 px), их размеры совпадают с расчётом раскладки в map.js. */
+body.explore-page{overflow:hidden}
+.explore{position:relative;height:calc(100vh - var(--hh,65px));height:calc(100dvh - var(--hh,65px));overflow:clip}
+#map{position:absolute;inset:0;background:#cdd9d7}
+.leaflet-container{font-family:var(--sans);background:#cdd9d7}
+.explore .demo-badge{font-size:11px}
+
+/* ---------- элементы управления на карте ---------- */
+.leaflet-control-zoom{border:0!important;box-shadow:none!important;margin:0 16px 0 0!important}
+.leaflet-control-zoom a{background:var(--paper)!important;color:var(--ink)!important;border:1px solid var(--line-strong)!important;border-radius:50%!important;width:36px!important;height:36px!important;line-height:34px!important;margin-bottom:8px;font-weight:400!important;box-shadow:var(--elev-1)}
+.leaflet-top.leaflet-right{top:76px;right:0;transition:right .4s cubic-bezier(.2,.8,.2,1)}
+.leaflet-bottom.leaflet-right{bottom:0}
+.leaflet-control-attribution{background:rgba(251,249,244,.85)!important;font-size:11px;color:var(--muted)}
+
+/* ---------- вступление ---------- */
+.intro{position:absolute;left:20px;top:20px;z-index:500;max-width:440px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 24px 16px;box-shadow:var(--elev-2);transition:transform .35s ease,opacity .35s}
+.intro h1{font-size:44px;margin:8px 0}
+.intro p{margin:0 0 12px;color:var(--ink2);font-size:var(--fs-16)}
+.intro .demo{color:var(--accent-strong)}
+.intro.hidden{transform:translateY(-12px);opacity:0;pointer-events:none}
+html.intro-seen .intro{display:none}
+.intro .eyebrow{padding-right:24px}
+.intro .eyebrow .demo-badge{margin-left:8px}
+.istats{display:flex;gap:24px;border-top:1px solid var(--line);padding-top:12px}
+.istats b{display:block;font:500 24px/1.1 var(--serif);font-variant-numeric:lining-nums}
+.istats span{font-size:var(--fs-12);color:var(--muted)}
+.collapse{position:absolute;right:12px;top:12px;width:32px;height:32px;border:0;border-radius:var(--r-sm);background:none;font-size:18px;color:var(--muted);cursor:pointer}
+.collapse:hover{background:rgba(25,25,23,.05);color:var(--ink)}
+.flowline{display:flex;flex-wrap:wrap;gap:4px 0;list-style:none;margin:0 0 12px;padding:0;font:500 var(--fs-14)/1.35 var(--sans);color:var(--ink2)}
+.flowline li+li::before{content:"→";margin:0 8px;color:var(--accent-strong)}
+.intro .ctas{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.intro .intro-demo{margin-top:12px}
+.intro-mini{position:absolute;left:20px;top:20px;z-index:500;display:flex;gap:8px;align-items:center;flex-wrap:wrap;max-width:calc(100% - 40px)}
+.intro-mini[hidden]{display:none}
+html.intro-seen .intro-mini[hidden]{display:flex}
+.intro-mini .demo-done{text-decoration:none}
+.intro-pill{border:1px solid var(--line-strong);background:var(--paper);border-radius:var(--r-pill);padding:8px 16px;font:500 var(--fs-14) var(--sans);cursor:pointer;color:var(--ink);box-shadow:var(--elev-1)}
+.intro-pill[hidden]{display:none}
+.intro-pill.cta{background:var(--accent-strong);border-color:var(--accent-strong);color:#fff;text-decoration:none;font-weight:600}
+.intro-pill.cta:hover{background:#b3341e}
+@media(max-height:1000px){.intro p{display:none}.intro h1{font-size:40px}}
+@media(max-height:880px){.intro .pplock{display:none}.intro h1{font-size:34px;margin-bottom:4px}.istats b{font-size:20px}}
+@media(max-height:780px){.intro .istats{display:none}}
+
+/* ---------- фильтры: строка над картой ---------- */
+.toolbar{position:absolute;left:480px;right:calc(360px + 64px);top:20px;z-index:500;display:flex;flex-wrap:nowrap;gap:8px;align-items:center;pointer-events:none}
+.toolbar>*{pointer-events:auto;flex:0 0 auto}
+.seg{display:inline-flex;background:var(--paper);border:1px solid var(--line-strong);border-radius:var(--r-pill);padding:3px;box-shadow:var(--elev-1)}
+.seg button{border:0;background:none;padding:6px 14px;border-radius:var(--r-pill);font:500 var(--fs-14) var(--sans);cursor:pointer;color:var(--ink2)}
+.seg button:hover{color:var(--ink)}
+.seg button.on{background:var(--ink);color:var(--paper)}
+.fbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);border-radius:var(--r-pill);padding:8px 16px;font:500 var(--fs-14) var(--sans);cursor:pointer;box-shadow:var(--elev-1)}
+.fbtn:hover,.fbtn[aria-expanded="true"]{border-color:var(--ink)}
+.fbtn.on{border-color:var(--ink);font-weight:600}
+.fcount{min-width:20px;height:20px;padding:0 6px;border-radius:var(--r-pill);background:var(--ink);color:var(--paper);font:600 var(--fs-12)/20px var(--sans);text-align:center}
+.fcount[hidden]{display:none}
+.ftokens{display:flex;gap:8px;align-items:center;min-width:0}
+.ftoken{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:var(--r-pill);padding:6px 8px 6px 14px;font:500 var(--fs-14) var(--sans);cursor:pointer;white-space:nowrap;box-shadow:var(--elev-1)}
+.ftoken span{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:16px;line-height:1;color:var(--ink2)}
+.ftoken:hover span{background:rgba(25,25,23,.08);color:var(--ink)}
+.ftoken.more{padding:6px 14px}
+.fclear,.linkbtn{border:0;background:none;padding:4px;font:500 var(--fs-14) var(--sans);color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px;cursor:pointer}
+.fclear{padding:8px 12px;background:rgba(251,249,244,.9);border-radius:var(--r-pill)}
+.fclear:hover,.linkbtn:hover{text-decoration-color:var(--ink)}
+
+/* ---------- панель Filters (модальная) ---------- */
+.filters-bg{position:absolute;inset:0;z-index:940;background:transparent}
+.filters-bg[hidden],.filters[hidden]{display:none}
+.filters{position:absolute;z-index:950;width:420px;max-width:calc(100% - 24px);max-height:calc(100% - 96px);display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--elev-3)}
+.fhead{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 8px 24px}
+.fhead h2{font-size:var(--fs-20);margin:0;letter-spacing:-.02em}
+.fx{display:grid;place-items:center;width:40px;height:40px;border:0;border-radius:50%;background:none;color:var(--ink);cursor:pointer}
+.fx:hover{background:rgba(25,25,23,.06)}
+.fbody{overflow:auto;padding:0 24px 8px}
+.fsec{border:0;margin:0;padding:12px 0 16px;border-top:1px solid var(--line)}
+.fsec:first-child{border-top:0}
+.fsec legend,.fgrid label>span{display:block;padding:0;margin:0 0 8px;font:600 var(--fs-12) var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fsec legend{float:left;width:100%}
+.fsec legend+*{clear:both}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fgrid .pillselect{width:100%}
+.ffoot{display:flex;justify-content:space-between;gap:12px;padding:12px 24px 16px;border-top:1px solid var(--line)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong);background:var(--paper);border-radius:var(--r-pill);padding:8px 14px;font:500 var(--fs-14) var(--sans);cursor:pointer;color:var(--ink);display:inline-flex;gap:8px;align-items:center}
+.chip:hover{border-color:var(--ink)}
+.chip i{font-style:normal;color:var(--muted);font-size:var(--fs-12);font-variant-numeric:tabular-nums}
+.chip.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.on i{color:#d3cdbf}
+.chip:disabled{opacity:.6;cursor:progress}
+.pillselect{appearance:none;border:1px solid var(--line-strong);background:var(--paper) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="%2368645b"/></svg>') no-repeat right 12px center;border-radius:var(--r-pill);padding:8px 32px 8px 14px;font:500 var(--fs-14) var(--sans);color:var(--ink);cursor:pointer}
+.toggle{display:inline-flex;gap:8px;align-items:center;font:500 var(--fs-14) var(--sans);cursor:pointer}
+.toggle input{accent-color:var(--ink);width:16px;height:16px}
+.toggle small{color:var(--muted);font-size:var(--fs-12)}
+
+/* Переключатель Map/List — только на телефоне. */
+.viewtoggle{display:none}
+
+/* ---------- лента заданий ---------- */
+.deck-wrap{position:absolute;left:0;right:0;bottom:0;z-index:600;pointer-events:none}
+.deck-head{display:flex;justify-content:space-between;align-items:center;gap:8px;pointer-events:auto}
+.deck-sum{min-width:0}
+#deck-count{display:block;font:600 var(--fs-16)/1.3 var(--sans);letter-spacing:-.02em}
+#deck-count em{font:italic 500 17px var(--serif);color:var(--ink)}
+#deck-count .pp-word{margin-left:4px}
+#deck-count .demo-badge{margin-left:8px;vertical-align:2px}
+.nearnote{display:block;font:500 var(--fs-12) var(--sans);color:var(--muted)}
+.deck-filters{display:none;font-size:var(--fs-12);color:var(--ink2)}
+.deck-filters .linkbtn{font-size:var(--fs-12);padding:0}
+.deck-nav{display:flex;align-items:center;gap:8px;flex:none}
+.deck-nav button:not(.btn){width:32px;height:32px;border-radius:50%;border:1px solid var(--line-strong);background:var(--paper);cursor:pointer;font-size:15px}
+.deck-nav button:not(.btn):hover{border-color:var(--ink)}
+.deck-nav .btn.sm{padding:6px 12px}
+.deck-head.single #prev,.deck-head.single #next{display:none}
+.deck{position:relative;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;pointer-events:auto;scrollbar-width:none}
+.deck::-webkit-scrollbar{display:none}
+.tcard{flex:0 0 272px;scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;cursor:pointer;transition:border-color .2s;position:relative}
+.tcard:hover{border-color:var(--line-strong)}
+.tcard.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.tcard .ph{position:relative}
+.tcard .camview{border-radius:0;aspect-ratio:16/9}
+.tcard .camview .osd{font-size:9px;left:8px;right:8px;top:4px}
+.tcard .camview .osd span:last-child,.tcard .camview .rec{display:none}
+.tcard .demotag{top:8px;bottom:auto;right:8px;font-size:11px}
+.tcard .rw{position:absolute;right:8px;bottom:8px;background:var(--paper);color:var(--ink);border-radius:var(--r-pill);padding:2px 12px;font:600 17px/1.2 var(--serif);font-variant-numeric:lining-nums;box-shadow:var(--elev-1)}
+.tcard.active .rw{background:var(--accent-strong);color:#fff}
+.tcard .bst{position:absolute;left:8px;bottom:10px;background:#003087;color:#fff;border-radius:var(--r-pill);padding:2px 8px;font:600 var(--fs-12) var(--sans)}
+.tcard .body{padding:12px 16px 12px}
+.tcard .kind{font:600 var(--fs-12) var(--sans);color:var(--muted)}
+.tcard .verif{color:var(--accent-strong)}
+.tcard h4{margin:4px 0;font:600 var(--fs-16)/1.3 var(--sans);letter-spacing:-.015em}
+.tcard .where{display:none}
+.guide{display:flex;gap:4px;flex-wrap:wrap;margin:4px 0}
+.gchip{font:500 var(--fs-12)/1.6 var(--sans);padding:0 8px;border-radius:var(--r-pill);border:1px solid var(--line2);color:var(--ink2);background:var(--paper)}
+.gchip.solo{border-color:#2f7d4f;color:#21613b}
+.gchip.team{border-color:#a45b16;color:#7f4510}
+.tcard .tools{font:500 var(--fs-14)/1.35 var(--sans);color:var(--ink2);margin-bottom:2px}
+.tcard .meta{font-size:var(--fs-14);line-height:1.35;color:var(--muted)}
+.tcard .meta + .meta{font-size:var(--fs-12);margin-top:2px}
+/* Загрузка: скелетон той же высоты, что карточка, — без сдвига вёрстки. */
+.tcard.skel{cursor:default;pointer-events:none}
+.tcard.skel .ph{aspect-ratio:16/9;background:#e6e1d5}
+.tcard.skel .body i{display:block;height:12px;margin:8px 0;border-radius:var(--r-sm);background:#ebe7dd}
+.tcard.skel .body i:nth-child(2){height:16px;width:80%}.tcard.skel .body i:nth-child(3){width:60%}
+@media(prefers-reduced-motion:no-preference){.tcard.skel .ph,.tcard.skel .body i{animation:skel 1.4s ease-in-out infinite}}
+@keyframes skel{50%{opacity:.55}}
+/* Пусто и ошибка — в ленте, с понятным следующим шагом. */
+.deck .state{padding:24px 16px;color:var(--ink2);font-size:var(--fs-16)}
+.deck .state p{margin:0 0 12px}
+
+/* ---------- панель задания ---------- */
+.sheet{position:absolute;top:12px;right:12px;bottom:12px;width:430px;z-index:900;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--elev-3);overflow:auto;transform:translateX(calc(100% + 24px));transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.sheet.open{transform:none}
+.sheet .hero{position:relative;border-radius:var(--r-lg) var(--r-lg) 0 0;overflow:hidden}
+.sheet .hero .camview{border-radius:0;aspect-ratio:16/10}
+.sheet .hero .camview .osd span:last-child{display:none}
+.sheet .x{position:absolute;top:12px;right:12px;z-index:3;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(20,20,18,.6);color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.sheet .x:hover{background:rgba(20,20,18,.8)}
+.sheet .in{padding:20px 24px 28px}
+.sheet h2{font-size:30px;margin:8px 0}
+.sheet .reward{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin:16px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sheet .reward .boosted{display:block;font-size:var(--fs-12);color:var(--muted);margin-top:4px}
+.sheet .reward b{font:500 48px/1 var(--serif);color:var(--accent-strong);font-variant-numeric:lining-nums}
+.sheet .payto,.sheet .facts,.sheet .payline{font-size:var(--fs-14);line-height:1.5}
+.sheet .facts{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0 0 16px}
+.sheet .facts dt{color:var(--muted)}.sheet .facts dd{margin:0}
+.sheet .payline{color:var(--ink2);margin:12px 0 4px}
+.sheet .cta{display:flex;gap:8px;margin:16px 0}
+.sheet .near{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.sheet .near button{flex:0 0 auto;border:1px solid var(--line2);background:none;border-radius:var(--r-md);padding:8px 12px;text-align:left;cursor:pointer;font:inherit;font-size:var(--fs-14)}
+.sheet .near button:hover{border-color:var(--ink)}
+.sheet .near button b{display:block;font:500 18px var(--serif);font-variant-numeric:lining-nums}
+.sheet .todo{margin:16px 0 8px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sheet .todo h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;font:600 var(--fs-12) var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:12px 0 4px}
+.sheet .todo h3:first-child{margin-top:0}
+.sheet .todo h3 .srcnote{text-transform:none;letter-spacing:0;font-weight:500;font-size:var(--fs-12);margin:0}
+.sheet .todo p{margin:0 0 4px}
+.checkflow{margin:4px 0 12px;padding-left:20px}.checkflow li{margin:4px 0;font-size:var(--fs-14)}
+.sheet .grab{display:none}
+/* Кадр: полный, выделенная зона, увеличение. */
+.frame{position:relative;margin:0;background:#111;overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:contain;display:block}
+.frame .roi{position:absolute;border:2px solid #ffd166;border-radius:var(--r-sm);box-shadow:0 0 0 9999px rgba(0,0,0,.28)}
+.frame .roi span{position:absolute;left:-2px;top:-22px;background:#ffd166;color:#1b1300;font:700 11px var(--sans);padding:2px 8px;border-radius:5px 5px 5px 0;white-space:nowrap}
+.frame .osd{position:absolute;left:12px;top:8px;font:700 11px Menlo,monospace;color:#f2f2f2;text-shadow:0 0 3px #000}
+.frame .zoom{position:absolute;right:12px;bottom:32px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(20,20,18,.6);color:#fff;display:grid;place-items:center;cursor:pointer}
+.frame .zoom:hover,.frame .zoom:focus-visible{background:rgba(20,20,18,.8)}
+.sheet .hero .frame{border-radius:var(--r-lg) var(--r-lg) 0 0}
+.framecap{margin:0;padding:8px 24px 0;font-size:var(--fs-12);color:var(--muted)}
+.modal.wide{max-width:min(1100px,96vw)}
+.zoomed .frame{border-radius:var(--r-md)}
+/* Закреплённые сумма и действие. */
+.sheet-cta{position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;background:var(--paper);border-top:1px solid var(--line);z-index:4}
+.sheet .sheet-cta .reward{display:flex;flex-direction:column;gap:2px;margin:0;padding:0;border:0;grid-template-columns:none}
+.sheet-cta .reward b{font:500 30px/1 var(--serif);color:var(--ink);font-variant-numeric:lining-nums}
+.sheet-cta .reward span{font-size:var(--fs-12);color:var(--muted)}
+
+/* ---------- метки на карте (размеры = расчёт раскладки в map.js) ---------- */
+.reward-pin{position:relative;display:inline-block;transform:translate(-50%,-50%);background:var(--ink);color:var(--paper);border-radius:var(--r-pill);white-space:nowrap;box-shadow:var(--elev-1);transition:transform .2s,background .2s}
+.reward-pin.sm{font:600 11px/16px var(--sans);padding:2px 7px}
+.reward-pin.lg{font:600 12.5px/18px var(--sans);padding:3px 9px}
+.reward-pin.claimed,.reward-pin.in_review{background:var(--paper);color:var(--ink);border:1.5px solid var(--ink)}
+/* Выполненное: светлая метка с галочкой — статус не только цветом. */
+.reward-pin.approved,.reward-pin.paid,.reward-pin.completed{background:#e6e1d5;color:var(--ink2);box-shadow:inset 0 0 0 1px #a39e93}
+.reward-pin.active{background:var(--accent-strong);color:#fff;box-shadow:var(--elev-1);transform:translate(-50%,-50%) scale(1.25);z-index:1000}
+.reward-pin.sm.active{transform:translate(-50%,-50%) scale(1.3)}
+.reward-pin .ki{display:inline-block;vertical-align:-2px;margin-right:3px;opacity:.85}
+.reward-pin.sm .ki{width:11px;height:11px}
+.reward-pin .more{display:inline-block;margin-left:5px;padding:0 5px;border-radius:var(--r-pill);background:rgba(255,255,255,.28);font-size:.85em;cursor:zoom-in}
+.pin-cluster{display:inline-block;transform:translate(-50%,-50%);background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);border-radius:var(--r-pill);white-space:nowrap;box-shadow:var(--elev-1);cursor:pointer}
+.pin-cluster.sm{font:600 11px/16px var(--sans);padding:1px 7px}
+.pin-cluster.lg{font:600 12.5px/18px var(--sans);padding:2px 9px}
+.pin-cluster b{font-weight:700}
+.pin-cluster.active{border-color:var(--accent-strong);color:var(--accent-strong)}
+.task-dot{width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid var(--paper);box-shadow:var(--elev-1);transform:translate(-50%,-50%);position:relative}
+.task-dot.claimed,.task-dot.in_review{background:var(--paper);border-color:var(--ink)}
+.task-dot.completed,.task-dot.paid,.task-dot.approved{background:#8f897c;width:8px;height:8px}
+.task-dot.active{background:var(--accent-strong);width:16px;height:16px}
+.task-dot.active::after,.reward-pin.active::after{content:"";position:absolute;inset:-8px;border-radius:var(--r-pill);border:2px solid var(--accent);animation:ping 1.6s ease-out infinite}
+@keyframes ping{from{opacity:.8;transform:scale(.7)}to{opacity:0;transform:scale(1.6)}}
+.cam-pin{width:13px;height:13px;border-radius:50%;background:var(--paper);border:2.5px solid var(--ink2);transform:translate(0,0)}
+.cam-pin svg{display:none}
+.cam-pin.maintenance{border-color:var(--warn)}.cam-pin.offline{border-color:#8f897c}
+.marker-cluster{background:none!important}
+.marker-cluster div{background:var(--paper)!important;color:var(--ink)!important;border:1.5px solid var(--ink2);font:600 11px var(--sans)!important;width:22px!important;height:22px!important;margin:0!important;opacity:.9;border-radius:50%!important;display:grid;place-items:center}
+.marker-cluster span{line-height:1}
+.marker-cluster-anim .leaflet-marker-icon,.marker-cluster-anim .leaflet-marker-shadow{transition:transform .25s ease-out,opacity .25s ease-in}
+.demo-done-pin{background:none;border:0}
+.demo-done-pin .st{white-space:nowrap;box-shadow:var(--elev-1);transform:translateX(-50%);display:inline-block}
+/* Подписи: районы тихие за счёт курсива, но ≥ 4.5:1 к суше (#6d695f — 4.6:1); улицы — так же. */
+.district-label{font:italic 500 18px var(--serif);color:#6d695f;white-space:nowrap;transform:translate(-50%,-50%);letter-spacing:-.01em;text-shadow:0 0 6px #efebe2,0 0 3px #efebe2}
+.street-label{font:500 11px var(--sans);color:#6d695f;letter-spacing:.02em;white-space:nowrap;pointer-events:none;text-shadow:0 0 3px #efebe2,0 0 3px #efebe2}
+.street-label.major{font-weight:600;color:#5c584f;font-size:12px}
+.leaflet-popup-content-wrapper{background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--elev-3)}
+.leaflet-popup-tip{background:var(--paper)}
+.leaflet-popup-content{margin:12px;width:290px!important}
+.pop h4{margin:12px 0 4px;font:600 var(--fs-16) var(--sans);letter-spacing:-.02em}
+.pop .meta{color:var(--muted);font-size:var(--fs-14)}
+.pop .actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.grouplist h4{margin:0 0 8px}
+.grouplist button{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:var(--r-md);padding:8px 12px;margin:4px 0;cursor:pointer;font:inherit;font-size:var(--fs-14)}
+.grouplist button b{margin-right:8px}.grouplist button span{display:block}
+.btn.ghost{border-color:transparent}.btn.ghost:hover{border-color:var(--line2)}
+
+/* ========== Компьютер: карта на всё пространство, лента — колонка справа ========== */
+@media(min-width:901px){
+  .deck-wrap{left:auto;top:0;bottom:0;width:360px;display:flex;flex-direction:column;background:var(--bg);border-left:1px solid var(--line)}
+  .deck-head{padding:16px 16px 8px;align-items:flex-start;flex-wrap:wrap}
+  .deck-nav button:not(.btn){transform:rotate(90deg)}
+  .deck{flex-direction:column;overflow-x:hidden;overflow-y:auto;scroll-snap-type:y proximity;padding:4px 16px 16px;scroll-padding:12px 0;flex:1;min-height:0}
+  .tcard{flex:0 0 auto;width:100%}
+  .tcard .meta + .meta{display:none}
+  .leaflet-top.leaflet-right{right:360px}
+  .explore.sheet-open .leaflet-top.leaflet-right{right:450px}
+}
+/* Узкий desktop (901–1100): фильтры сверху, место — в placeToolbar(). */
+@media(min-width:901px) and (max-width:1100px){.toolbar{top:20px}.intro{max-width:360px}.intro h1{font-size:40px}}
+
+/* ========== Телефон и планшет ========== */
+@media(max-width:900px){
+  .viewtoggle{display:inline-flex;position:absolute;right:12px;top:12px;z-index:620}
+  .leaflet-control-zoom{display:none}
+  .intro,.intro-mini{top:12px;left:12px}
+  .intro-mini{max-width:calc(100% - 140px)}
+  .intro{right:auto;max-width:calc(100% - 140px);padding:12px 16px;transition:none;max-height:calc(100% - var(--deck,340px) - 36px);overflow:hidden}
+  .intro.hidden{display:none}
+  .intro h1{font-size:24px!important;margin:4px 0 0;padding-right:24px}
+  .intro .istats,.intro .pplock,.intro .eyebrow,.intro p{display:none}
+  .intro .ctas{margin-top:8px}
+  .intro .ctas .btn,.intro .intro-demo{padding:6px 12px;font-size:var(--fs-14)}
+  .flowline{font-size:var(--fs-12);margin:4px 0 0}.flowline li+li::before{margin:0 4px}
+  /* Пилюли над картой на телефоне — 13 px, чтобы About и Try the demo стояли в одну строку с Map/List. */
+  .intro-mini{gap:6px}.intro-pill{padding:6px 10px;font-size:13px}
+  .toolbar{top:62px;left:12px;right:12px;bottom:auto}
+  .ftokens{display:none}
+  /* Панель фильтров — нижний лист. */
+  .filters-bg{background:rgba(25,25,23,.4);z-index:1700;position:fixed}
+  .filters{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-width:none;max-height:86%;border-radius:var(--r-lg) var(--r-lg) 0 0;z-index:1710}
+  .fhead{padding:12px 12px 4px 16px}.fbody{padding:0 16px 8px}.ffoot{padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+  /* Лента: шапка-полоса и горизонтальные компактные карточки. */
+  .deck-head{padding:12px 16px 8px;background:var(--bg);border-top:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0;min-height:52px;box-shadow:0 -4px 16px rgba(25,25,23,.08)}
+  #deck-count{font-size:var(--fs-14)}#deck-count em{font-size:15px}
+  .deck-filters{display:block;margin-top:2px}
+  .deck-nav button:not(.btn){display:none}
+  .deck{background:var(--bg);padding:4px 16px 12px;scroll-padding:0 16px}
+  .explore:not(.listview) .tcard{flex:0 0 min(300px,calc(100vw - 56px));display:grid;grid-template-columns:104px 1fr;min-height:104px}
+  .explore:not(.listview) .tcard .ph{height:100%}
+  .explore:not(.listview) .tcard .camview{aspect-ratio:auto;height:100%}
+  .explore:not(.listview) .tcard .camview .osd,.explore:not(.listview) .tcard .bst{display:none}
+  .explore:not(.listview) .tcard .demotag{top:auto;bottom:4px;left:4px;right:auto;font-size:0;padding:1px 6px}
+  .explore:not(.listview) .tcard .demotag::after{content:"Demo";font-size:11px}
+  .explore:not(.listview) .tcard .rw{right:4px;top:4px;bottom:auto;font-size:15px;padding:0 8px}
+  .explore:not(.listview) .tcard .body{padding:8px 12px;min-width:0}
+  .explore:not(.listview) .tcard h4{font-size:15px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .explore:not(.listview) .tcard .where{display:block;font-size:var(--fs-12);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .explore:not(.listview) .tcard .guide,.explore:not(.listview) .tcard .tools,.explore:not(.listview) .tcard .meta{display:none}
+  .explore:not(.listview) .tcard.skel .ph{aspect-ratio:auto}
+  /* Список: полные карточки. */
+  .explore.listview #map,.explore.listview .leaflet-control-container{visibility:hidden}
+  .explore.listview .deck-wrap{top:110px;background:var(--bg)}
+  .explore.listview .deck-head{box-shadow:none;border-radius:0}
+  .explore.listview .deck{flex-direction:column;overflow-y:auto;overflow-x:hidden;height:calc(100% - 52px);padding:4px 12px 20px}
+  .explore.listview .tcard{flex:0 0 auto;width:100%}
+  .explore.listview .tcard .meta + .meta{display:block}
+  /* Выдвижная панель задания снизу. */
+  .sheet{left:0;right:0;top:auto;bottom:0;width:auto;max-height:72%;border-radius:var(--r-lg) var(--r-lg) 0 0;transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.8,.2,1),max-height .3s}
+  .sheet.open{transform:none}
+  .sheet.full{max-height:94%}
+  .sheet .grab{display:block;position:sticky;top:0;width:100%;height:24px;border:0;background:var(--paper);cursor:pointer;z-index:5}
+  .sheet .grab span{display:block;width:40px;height:4px;border-radius:var(--r-pill);background:var(--line-strong);margin:0 auto}
+  .sheet .hero .frame{border-radius:0}
+  .sheet .x{top:32px}
+  .sheet h2{font-size:var(--fs-24)}
+  .sheet .in{padding:16px 16px 24px}
+  .sheet-cta{padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+  .sheet-cta .reward b{font-size:26px}
+  .explore.sheet-open .leaflet-top.leaflet-right{right:0}
+  /* Атрибуция OSM не ложится на закреплённую кнопку панели. */
+  .explore.sheet-open .leaflet-bottom.leaflet-right{visibility:hidden}
+}
+/* Очень узкий телефон: кнопка Filters — значок и число. */
+@media(max-width:360px){
+  .seg button{padding:6px 10px}
+  .fbtn{padding:8px 12px}
+  .fbtn .fbtn-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .sheet-cta .btn.lg{padding:12px 16px;font-size:var(--fs-14)}
+}

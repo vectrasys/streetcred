@@ -1,0 +1,6 @@
+# PayPal SANDBOX credentials only (developer.paypal.com → Apps & Credentials → Sandbox).
+# Copy to .dev.vars (git-ignored) and fill in. Never commit real values.
+PAYPAL_CLIENT_ID=
+PAYPAL_CLIENT_SECRET=
+# Sandbox personal (buyer) account used as the single test payout receiver and for Checkout tests
+PAYPAL_BUYER_EMAIL=

@@ -1,0 +1,16 @@
+{
+  "package": "ag-grid-community",
+  "version": "36.2.0",
+  "license": "MIT",
+  "officialRepository": "https://github.com/ag-grid/ag-grid",
+  "tarball": "https://registry.npmjs.org/ag-grid-community/-/ag-grid-community-36.2.0.tgz",
+  "npmIntegrity": "sha512-tK0Toj7t0fV/OMLPnDc0xlYKAqDbnCT3iJodYSn2TJ541caU8jPdYwWhMdW+AP2+pUNwFiJVgc04eJNfvBPsWw==",
+  "bundle": "dist/ag-grid-community.min.js",
+  "sha256": "5f8ddee2e7e2d78e4005f29329404e67bba54ee6db63710b91878e81076ebc1e",
+  "retrieved": "2026-10-04",
+  "docs": [
+    "https://www.ag-grid.com/javascript-data-grid/installation/",
+    "https://www.ag-grid.com/javascript-data-grid/csv-export/"
+  ],
+  "scope": "Unmodified official Community browser bundle. No Enterprise, AG Studio or Agent Framework. Root package.json and lockfile unchanged."
+}

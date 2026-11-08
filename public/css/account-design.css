@@ -1,0 +1,82 @@
+/* Account-only layout; shared tokens and chrome remain in site.css. */
+.account-page #app { max-width: 1100px; }
+.account-page .account-identity { margin-bottom: 26px; gap: 14px; }
+.account-page .account-identity h1 { font-size: clamp(26px, 3vw, 36px); margin: 0 0 2px; }
+.account-page .account-identity .av,
+.account-page .account-initials { width: 52px; height: 52px; font-size: 18px; flex: none; }
+.account-page .account-focus { background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius); padding: 26px 30px; }
+.account-page .account-focus h2 { font: 500 clamp(25px, 3vw, 34px)/1.2 var(--serif); margin: 8px 0; }
+.account-page .account-focus-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.account-page .account-focus > p { margin: 4px 0 20px; }
+.account-page .account-progress { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; padding: 0; margin: 24px 0; gap: 12px; }
+.account-page .account-progress li { border-top: 2px solid var(--line); padding-top: 12px; color: var(--muted); font-size: 13px; display: flex; gap: 8px; align-items: center; }
+.account-page .account-progress li span { width: 22px; height: 22px; border-radius: 50%; background: var(--bg); display: grid; place-items: center; flex: none; font-size: 11px; }
+.account-page .account-progress .done { color: var(--ok); border-color: var(--ok); }
+.account-page .account-progress .done span { background: var(--ok-bg); }
+.account-page .account-progress .current { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+.account-page .account-progress .current span { background: var(--accent-bg); color: var(--accent); }
+.account-page .account-next { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.account-page .account-next p { margin: 0; max-width: 560px; }
+.account-page .btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+.account-page .btn.primary:hover { background: #c93b25; border-color: #c93b25; }
+.account-page .account-discover { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.account-page .account-discover p { margin-bottom: 0; max-width: 580px; }
+.account-page .account-summary { padding: 24px 0 12px; }
+.account-page .account-summary-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.account-page .account-summary-heading h2 { font-size: 16px; margin: 0; }
+.account-page .account-summary-heading a, .account-page .account-wallet a { font-size: 13px; }
+.account-page .account-balances { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin: 18px 0; }
+.account-page .account-balances dt { color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+.account-page .account-balances dd { margin: 0; font-size: 24px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.account-page .account-balances .paid dd { color: var(--ok); }
+.account-page .account-balances .zero dd { color: var(--muted); font-size: 19px; font-weight: 400; }
+.account-page .account-wallet { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); padding-top: 12px; color: var(--muted); font-size: 13px; }
+.account-page .tabs { margin-top: 22px; }
+.account-page .tabs button.on { background: var(--accent-bg); color: var(--accent); border-color: var(--accent); }
+.account-page .account-section-title { font-size: 19px; margin: 22px 0 12px; }
+.account-page #active { grid-template-columns: 1fr; scroll-margin-top: 90px; }
+.account-page .account-awaiting h3 { margin: 14px 0 4px; }
+.account-page .account-task .row2 > div { min-width: 0; }
+.account-page .steps .done::before { background: var(--ok); }
+.account-page .account-history td { overflow-wrap: anywhere; }
+.account-page .account-history code { font-size: 12px; }
+.account-page .receipt dd { overflow-wrap: anywhere; min-width: 0; }
+.account-page .wallet.on { border-color: var(--accent); background: var(--accent-bg); }
+.account-page .account-focus .btn { flex: none; }
+@media (max-width: 700px) {
+  .account-page .wrap { padding-left: 18px; padding-right: 18px; }
+  .account-page .account-identity { margin-bottom: 20px; align-items: center; }
+  .account-page .account-identity h1 { font-size: 26px; }
+  .account-page .account-focus { padding: 20px; }
+  .account-page .account-focus-title, .account-page .account-discover, .account-page .account-next { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .account-page .account-focus h2 { font-size: 27px; }
+  .account-page .account-progress { grid-template-columns: repeat(2, 1fr); gap: 16px 12px; margin: 20px 0; }
+  .account-page .account-balances { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .account-page .account-wallet { flex-wrap: wrap; gap: 6px 12px; }
+  .account-page .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; border: 0; }
+  .account-page .tabs button { padding: 10px 8px; border: 1px solid var(--line); border-radius: 8px; text-align: center; }
+  .account-page .tabs button.on { background: var(--accent-bg); }
+  .account-page .account-summary-heading { align-items: baseline; }
+  .account-page .account-summary-heading a { white-space: nowrap; }
+  .account-page .account-history, .account-page .account-history tbody { display: block; }
+  .account-page .account-history thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); }
+  .account-page .account-history tr { display: block; padding: 16px; border-bottom: 1px solid var(--line); }
+  .account-page .account-history tr:last-child { border-bottom: 0; }
+  .account-page .account-history td { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 2px 12px; padding: 6px 0; border: 0; text-align: left; font-size: 13px; }
+  .account-page .account-history td::before { content: attr(data-label); color: var(--muted); font-size: 12px; grid-column: 1; grid-row: 1 / span 3; }
+  .account-page .account-history td > * { grid-column: 2; min-width: 0; justify-self: start; }
+  .account-page .account-history .pill { white-space: normal; }
+  .account-page .card { padding: 18px; }
+  .account-page .account-task .steps { padding-left: 25px; }
+  .account-page .account-task .steps img { width: 100px !important; height: 100px !important; }
+  .account-page .account-task .steps li > div { flex-wrap: wrap; }
+  .account-page .account-task .btn { white-space: normal; text-align: left; }
+  .account-page .wallets { grid-template-columns: 1fr; }
+}
+@media (max-width: 350px) {
+  .account-page .wrap { padding-left: 12px; padding-right: 12px; }
+  .account-page .account-focus { padding: 16px; }
+  .account-page .account-summary-heading { flex-wrap: wrap; gap: 4px; }
+  .account-page .account-history tr { padding: 12px; }
+  .account-page .account-history td { grid-template-columns: 66px minmax(0, 1fr); gap: 2px 8px; }
+}

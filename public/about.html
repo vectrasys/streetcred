@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<title>Port Calloway demo city · StreetCred</title>
+<meta name="description" content="A short history of Port Calloway and its seven neighborhoods, from the 1849 wharf to the StreetCred program.">
+<style>
+.lead{font:400 clamp(20px,2vw,26px)/1.35 var(--serif);max-width:900px;margin:0 0 28px}
+.tl{margin:10px 0 30px}
+.tl .ev{position:relative;padding:16px 0 16px 136px;border-top:1px solid var(--line)}
+.tl .yr{position:absolute;left:0;top:17px;width:124px;font:500 21px/1 var(--serif);color:var(--ink)}
+.tl .ev:last-child .yr{color:var(--accent)}
+.hoods{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:22px}
+.hood .ph{aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:var(--c);position:relative}.hood .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.hood:hover .ph img{transform:scale(1.04)}
+.hood .b{padding:12px 2px 4px}.hood h3{font-size:21px;margin:2px 0 0}
+.hood .era{font:500 12px var(--sans);color:var(--muted);letter-spacing:.06em}
+.aboutgrid{grid-template-columns:1fr 1.7fr;gap:48px;align-items:start}@media(max-width:860px){.aboutgrid{grid-template-columns:1fr}}
+.facts{margin:0 0 30px}
+@media(max-width:600px){.tl .ev{padding-left:0}.tl .yr{position:static;margin-bottom:6px}}
+</style></head><body><main class="page"><div class="wrap">
+<div class="eyebrow">StreetCred demo city · Central Coast, California · fictional</div><h1>Port <em>Calloway</em></h1>
+<p class="lead">A small harbor city on the Central Coast, built by whalers, sardine canners and lumbermen, with a pine forest on the hill and fog most summer mornings. About 24,800 people live here across seven neighborhoods, each built in a different era.</p>
+<div class="kpis facts" id="facts"></div>
+<div class="demo-note" style="margin-bottom:22px">Port Calloway is a fictional city created for a hackathon demo. Its street layout comes from real OpenStreetMap geometry; every name, date and person on this site is invented.</div>
+<div class="row2 aboutgrid">
+<div><h2>A short <em>history</em></h2><div class="tl">
+<div class="ev"><div class="yr">Before 1849</div>The shore of the bay was home to Ohlone (Rumsen) communities for thousands of years. Shell mounds were found under Front Street when the wharf was rebuilt in 1911.</div>
+<div class="ev"><div class="yr">1849</div>Captain Elias Calloway builds a supply wharf for ships heading to the gold fields. Stores, a customs shed and a boarding house grow around it: today’s <b>Old Wharf</b>.</div>
+<div class="ev"><div class="yr">1868</div>Port Calloway is incorporated as a town. Population: 412.</div>
+<div class="ev"><div class="yr">1875</div>A Methodist summer camp meeting rents tent lots in the pine grove. Families replace the tents with tiny board-and-batten cottages: the start of <b>Chautauqua Grove</b>.</div>
+<div class="ev"><div class="yr">1882</div>The Calloway &amp; Sons lumber mill opens on the creek flats. The mill closes in 1958, but the area keeps its name, <b>Millworks</b>.</div>
+<div class="ev"><div class="yr">1908–1946</div>The sardine boom. Twelve canneries and the barrel makers who supply them fill the waterfront with brick warehouses: <b>The Cooperage</b>.</div>
+<div class="ev"><div class="yr">1912</div>A streetcar line climbs the hill, and Craftsman bungalows follow it into the pines of <b>Pine Heights</b>.</div>
+<div class="ev"><div class="yr">1919–1938</div>After the Front Street fire, the city rebuilds its civic center in Spanish Colonial Revival style. City Hall opens on <b>Mission Plaza</b> in 1927.</div>
+<div class="ev"><div class="yr">1947–1952</div>The sardines disappear. The canneries close one by one.</div>
+<div class="ev"><div class="yr">1952–1968</div>Post-war families buy ranch houses on the former dairy land of <b>Seaview Terrace</b>.</div>
+<div class="ev"><div class="yr">1979</div>The Cooperage becomes a historic district; canneries turn into lofts, studios and restaurants.</div>
+<div class="ev"><div class="yr">2019–2024</div>Public Works installs street cameras for traffic and storm-drain monitoring, now a network of more than 600 cameras.</div>
+<div class="ev"><div class="yr">August 2026</div><b>StreetCred</b> launches: residents fix small problems in their neighborhood, the cameras confirm the result, and the city pays them through PayPal.</div>
+</div></div>
+<div><h2>Seven <em>neighborhoods</em></h2><div class="hoods" id="hoods"></div></div>
+</div></div></main>
+<script type="module">
+import { $, h, api, chrome } from '/js/common.js';
+await chrome('about');
+const city = await api('/api/public/city');
+const n = (d) => city.cameras.filter((c) => c.district === d).length;
+const t = (d) => city.tasks.filter((x) => x.district === d && x.status === 'open').length;
+$('#facts').innerHTML = [['1849', 'Founded'], ['24,800', 'Residents'], ['7', 'Neighborhoods'], [city.cameras.length, 'Public Works cameras'], ['48°F–68°F', 'Typical year, foggy summers']]
+  .map(([b, s]) => `<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join('');
+const STORY = {
+  wharf: 'The oldest blocks in the city: two-story Italianate storefronts with wooden cornices, the harbormaster’s office and the fish market on the pier.',
+  grove: 'Narrow lanes laid out for tents, now lined with tiny Victorian cottages, gingerbread trim and picket fences. Still the densest neighborhood in town.',
+  millworks: 'Metal warehouses, auto shops and the brick boiler house of the old lumber mill. Most of the city’s dumping reports come from here.',
+  cooperage: 'Red-brick canneries and corrugated sheds by the water, now lofts, breweries and studios. Loading docks became patios.',
+  heights: 'Craftsman bungalows with deep porches on winding streets among Monterey pines. Fallen branches are the classic task here.',
+  plaza: 'White stucco, red tile roofs and arcades around City Hall, the library and the farmers’ market.',
+  seaview: 'Single-story ranch houses, carports and wide lawns on the gentle slope above the bay.',
+};
+$('#hoods').innerHTML = city.districts.slice().sort((a, b) => a.era.localeCompare(b.era)).map((d) => `<div class="hood" style="--c:${d.color}">
+<div class="ph"><img src="/img/views/v${d.id}1.jpg" alt="Street in ${h(d.name)}" onerror="this.remove()"></div>
+<div class="b"><div class="era">${h(d.era).toUpperCase()}</div><h3>${h(d.name)}</h3>
+<p style="margin:8px 0">${h(STORY[d.id] || '')}</p><div class="muted small">${n(d.id)} cameras · ${t(d.id)} open tasks · <a href="/">see on the map</a></div></div></div>`).join('');
+</script></body></html>

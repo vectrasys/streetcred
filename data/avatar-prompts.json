@@ -1,0 +1,240 @@
+{
+ "model": "ChatGPT image generation (chatgpt.com, OpenAI), 2026-10-05",
+ "settings": {
+  "method": "5 grid images (four 3x3, one 2x2, 1254x1254) sliced along the white gutters, center-square crop, resized to 256x256 JPG"
+ },
+ "grids": [
+  {
+   "grid": 1,
+   "ids": [
+    "aaliyah",
+    "amara",
+    "andre",
+    "caleb",
+    "chloe",
+    "dante",
+    "diego",
+    "elena",
+    "ethan"
+   ],
+   "prompt": "Create one square image: a 3x3 grid of 9 separate square portrait photos of different fictional people, all cells exactly equal size, separated by thin straight white lines, no outer border. Each cell is a casual phone photo of one person sitting by a window in a cozy cafe, soft natural window light from one side, genuine laughing smile, head and shoulders, realistic skin texture, natural colors, like a social media profile picture. Each cell shows only that one person. No text, no names, no numbers, no logos, no letters on clothing, no watermark. Order, left to right, top to bottom — cell 1 (row 1, column 1): a young woman in her early twenties with warm brown skin and long straight dark hair, wearing a plain white t-shirt and backpack straps; cell 2 (row 1, column 2): a young woman in her twenties with long copper-red hair, fair skin and freckles, wearing a plain green zip-up vest with no print over a grey t-shirt; cell 3 (row 1, column 3): a man in his forties with medium brown skin, short dark hair and a short beard with a little grey, wearing a plain grey hoodie; cell 4 (row 2, column 1): a young man in his twenties with fair skin and tousled blond hair, wearing a plaid flannel shirt; cell 5 (row 2, column 2): a young woman in her twenties of East Asian appearance with a short purple bob haircut, wearing denim overalls; cell 6 (row 2, column 3): a young man in his twenties with light brown skin and curly dark hair, wearing a plain grey t-shirt; cell 7 (row 3, column 1): a young man in his early twenties with light brown skin and curly black hair, wearing a plain grey hoodie and backpack straps; cell 8 (row 3, column 2): a woman in her thirties with fair skin and blond hair in a bun, wearing a plain dark puffer vest; cell 9 (row 3, column 3): a teenage boy around seventeen of East Asian appearance with short dark hair, wearing a denim jacket."
+  },
+  {
+   "grid": 2,
+   "ids": [
+    "fatima",
+    "felix",
+    "grace",
+    "hannah",
+    "hiro",
+    "imani",
+    "isabel",
+    "jordan",
+    "kenji"
+   ],
+   "prompt": "Create one square image: a 3x3 grid of 9 separate square portrait photos of different fictional people, all cells exactly equal size, separated by thin straight white lines, no outer border. Each cell is a casual phone photo of one person sitting by a window in a cozy cafe, soft natural window light from one side, genuine laughing smile, head and shoulders, realistic skin texture, natural colors, like a social media profile picture. Each cell shows only that one person. No text, no names, no numbers, no logos, no letters on clothing, no watermark. Order, left to right, top to bottom — cell 1 (row 1, column 1): a woman in her thirties with light brown skin wearing a navy blue hijab and a plain beige jacket; cell 2 (row 1, column 2): a man in his fifties of East Asian appearance with short grey-black hair and glasses, wearing a blue button-up shirt; cell 3 (row 1, column 3): a woman in her thirties of East Asian appearance with a black bob haircut and bangs, wearing a beige trench coat; cell 4 (row 2, column 1): a woman in her late sixties with fair skin and short silver hair, wearing a beige knit sweater; cell 5 (row 2, column 2): an elderly man in his seventies of East Asian appearance with grey hair and glasses, wearing a plain light baseball cap with no logo and a navy polo shirt; cell 6 (row 2, column 3): a young woman in her twenties with dark skin and long dark braids, wearing a mustard yellow jacket; cell 7 (row 3, column 1): a woman in her forties with light olive skin and long dark wavy hair, wearing a cream cardigan; cell 8 (row 3, column 2): a man in his sixties with fair weathered skin, swept-back grey hair, a grey beard and light blue eyes, wearing a dark jacket; cell 9 (row 3, column 3): a man in his forties of East Asian appearance with short black hair, wearing a plain black polo shirt."
+  },
+  {
+   "grid": 3,
+   "ids": [
+    "leah",
+    "lucia",
+    "luis",
+    "marcus",
+    "mateo",
+    "maya",
+    "mei",
+    "nadia",
+    "naomi"
+   ],
+   "prompt": "Create one square image: a 3x3 grid of 9 separate square portrait photos of different fictional people, all cells exactly equal size, separated by thin straight white lines, no outer border. Each cell is a casual phone photo of one person sitting by a window in a cozy cafe, soft natural window light from one side, genuine laughing smile, head and shoulders, realistic skin texture, natural colors, like a social media profile picture. Each cell shows only that one person. No text, no names, no numbers, no logos, no letters on clothing, no watermark. Order, left to right, top to bottom — cell 1 (row 1, column 1): a woman in her thirties with olive skin and curly dark shoulder-length hair, wearing a plain dark zip athletic jacket; cell 2 (row 1, column 2): a young woman in her twenties with light tan skin and long straight black hair, wearing a lilac top and backpack straps; cell 3 (row 1, column 3): a young man in his twenties with medium brown skin and short dark hair, wearing a plain grey hoodie; cell 4 (row 2, column 1): a man in his sixties with fair skin, grey hair, a grey beard and glasses, wearing a plain dark fleece jacket; cell 5 (row 2, column 2): a young man in his twenties with dark skin and short twisted locs, wearing a plain orange high-visibility safety vest with no lettering; cell 6 (row 2, column 3): a young woman in her twenties with dark skin and a curly afro, wearing a plain green zip-up vest with no print; cell 7 (row 3, column 1): a young woman in her twenties of East Asian appearance with long dark hair, wearing a yellow rain jacket; cell 8 (row 3, column 2): a woman in her sixties of East Asian appearance with short grey hair and a small pearl necklace, wearing a brown wool coat; cell 9 (row 3, column 3): a woman in her thirties with light tan skin and dark hair in a long braid, wearing a black blazer and a plain red lanyard."
+  },
+  {
+   "grid": 4,
+   "ids": [
+    "noah",
+    "omar",
+    "owen",
+    "priya",
+    "quinn",
+    "rosa",
+    "ruby",
+    "samir",
+    "sofia"
+   ],
+   "prompt": "Create one square image: a 3x3 grid of 9 separate square portrait photos of different fictional people, all cells exactly equal size, separated by thin straight white lines, no outer border. Each cell is a casual phone photo of one person sitting by a window in a cozy cafe, soft natural window light from one side, genuine laughing smile, head and shoulders, realistic skin texture, natural colors, like a social media profile picture. Each cell shows only that one person. No text, no names, no numbers, no logos, no letters on clothing, no watermark. Order, left to right, top to bottom — cell 1 (row 1, column 1): a man in his thirties with dark skin, short black hair and a short beard, wearing a plaid shirt; cell 2 (row 1, column 2): a man in his forties with light brown skin, short dark hair and a mustache, wearing a grey button-up shirt; cell 3 (row 1, column 3): a man in his forties with tan skin and a shaved head, wearing a plain black long-sleeve top; cell 4 (row 2, column 1): a young woman in her twenties with light tan skin and long straight black hair, wearing a white blouse; cell 5 (row 2, column 2): a young man in his twenties with dark skin and short dark hair, wearing a brown leather jacket; cell 6 (row 2, column 3): a woman in her seventies with light brown skin and curly grey hair, wearing a red floral blouse; cell 7 (row 3, column 1): a young woman around twenty with fair skin and light brown hair in a braid, wearing a grey knit sweater; cell 8 (row 3, column 2): a man in his fifties with medium brown skin and grey hair, wearing a dark sweater over a light blue collared shirt; cell 9 (row 3, column 3): a young woman in her twenties with fair skin and light brown hair in a ponytail, wearing a plain black rain jacket."
+  },
+  {
+   "grid": 5,
+   "ids": [
+    "theo",
+    "tyrone",
+    "wyatt",
+    "zoe"
+   ],
+   "prompt": "Create one square image: a 2x2 grid of 4 separate square portrait photos of different fictional people, all cells exactly equal size, separated by thin straight white lines, no outer border. Each cell is a casual phone photo of one person sitting by a window in a cozy cafe, soft natural window light from one side, genuine laughing smile, head and shoulders, realistic skin texture, natural colors, like a social media profile picture. Each cell shows only that one person. No text, no names, no numbers, no logos, no letters on clothing, no watermark. Order, left to right, top to bottom — cell 1 (row 1, column 1): a young man in his twenties with fair skin and ginger hair, wearing a plain grey hoodie; cell 2 (row 1, column 2): an elderly man in his seventies with dark brown skin, a grey mustache and deep smile lines, wearing a plain navy baseball cap with no logo and a navy jacket; cell 3 (row 2, column 1): a man in his late sixties with fair weathered skin, white hair and a white beard, wearing a tan canvas work jacket; cell 4 (row 2, column 2): a woman in her thirties of East Asian appearance with long straight dark hair, wearing a plain dark jacket."
+  }
+ ],
+ "avatars": {
+  "aaliyah": {
+   "grid": 1,
+   "cell": 1
+  },
+  "amara": {
+   "grid": 1,
+   "cell": 2
+  },
+  "andre": {
+   "grid": 1,
+   "cell": 3
+  },
+  "caleb": {
+   "grid": 1,
+   "cell": 4
+  },
+  "chloe": {
+   "grid": 1,
+   "cell": 5
+  },
+  "dante": {
+   "grid": 1,
+   "cell": 6
+  },
+  "diego": {
+   "grid": 1,
+   "cell": 7
+  },
+  "elena": {
+   "grid": 1,
+   "cell": 8
+  },
+  "ethan": {
+   "grid": 1,
+   "cell": 9
+  },
+  "fatima": {
+   "grid": 2,
+   "cell": 1
+  },
+  "felix": {
+   "grid": 2,
+   "cell": 2
+  },
+  "grace": {
+   "grid": 2,
+   "cell": 3
+  },
+  "hannah": {
+   "grid": 2,
+   "cell": 4
+  },
+  "hiro": {
+   "grid": 2,
+   "cell": 5
+  },
+  "imani": {
+   "grid": 2,
+   "cell": 6
+  },
+  "isabel": {
+   "grid": 2,
+   "cell": 7
+  },
+  "jordan": {
+   "grid": 2,
+   "cell": 8
+  },
+  "kenji": {
+   "grid": 2,
+   "cell": 9
+  },
+  "leah": {
+   "grid": 3,
+   "cell": 1
+  },
+  "lucia": {
+   "grid": 3,
+   "cell": 2
+  },
+  "luis": {
+   "grid": 3,
+   "cell": 3
+  },
+  "marcus": {
+   "grid": 3,
+   "cell": 4
+  },
+  "mateo": {
+   "grid": 3,
+   "cell": 5
+  },
+  "maya": {
+   "grid": 3,
+   "cell": 6
+  },
+  "mei": {
+   "grid": 3,
+   "cell": 7
+  },
+  "nadia": {
+   "grid": 3,
+   "cell": 8
+  },
+  "naomi": {
+   "grid": 3,
+   "cell": 9
+  },
+  "noah": {
+   "grid": 4,
+   "cell": 1
+  },
+  "omar": {
+   "grid": 4,
+   "cell": 2
+  },
+  "owen": {
+   "grid": 4,
+   "cell": 3
+  },
+  "priya": {
+   "grid": 4,
+   "cell": 4
+  },
+  "quinn": {
+   "grid": 4,
+   "cell": 5
+  },
+  "rosa": {
+   "grid": 4,
+   "cell": 6
+  },
+  "ruby": {
+   "grid": 4,
+   "cell": 7
+  },
+  "samir": {
+   "grid": 4,
+   "cell": 8
+  },
+  "sofia": {
+   "grid": 4,
+   "cell": 9
+  },
+  "theo": {
+   "grid": 5,
+   "cell": 1
+  },
+  "tyrone": {
+   "grid": 5,
+   "cell": 2
+  },
+  "wyatt": {
+   "grid": 5,
+   "cell": 3
+  },
+  "zoe": {
+   "grid": 5,
+   "cell": 4
+  }
+ }
+}

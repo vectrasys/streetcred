@@ -1,0 +1,13 @@
+{
+  "note": "Recorded evidence only; not re-queried. The public demo never calls PayPal.",
+  "payoutBatch": {
+    "environment": "PayPal sandbox",
+    "payoutBatchId": "8UHZZPV6TKE74",
+    "items": 3,
+    "total": "75.00",
+    "currency": "USD",
+    "status": "SUCCESS",
+    "date": "2026-10-02",
+    "source": "Project session log of the 2026-10-02 end-to-end run (v1 dashboard feed: \"PayPal Payouts: batch 8UHZZPV6TKE74 · 3 payouts · $75.00\"); project_data/experiments.json entry city-proof records a $75 sandbox Payouts batch that reached SUCCESS."
+  }
+}

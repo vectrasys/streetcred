@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StreetCred · Good deeds. Real credit.</title>
+<meta name="description" content="Find a spot that needs care in Port Calloway, do the work, and get paid through PayPal once a street camera confirms the result.">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<!-- Подложка карты грузится с самого начала разбора страницы, параллельно со скриптами; URL с хешем. -->
+<link rel="preload" id="basemap-src" href="/data/basemap.dc81359ee358.json" as="fetch" type="application/json" crossorigin="anonymous">
+<link rel="stylesheet" href="/vendor/leaflet.css"><link rel="stylesheet" href="/vendor/MarkerCluster.css">
+<link rel="stylesheet" href="/css/site.css"><link rel="stylesheet" href="/css/map.css">
+<!-- Свёрнутое вступление не мигает при загрузке: флаг ставится до первой отрисовки. -->
+<script>try{if(localStorage.getItem('cp_intro_seen')==='1')document.documentElement.classList.add('intro-seen')}catch(e){}</script>
+</head><body class="explore-page">
+<main class="explore">
+  <div id="map"></div>
+
+  <section class="intro" id="intro" aria-label="About StreetCred">
+    <div class="eyebrow">StreetCred · Port Calloway demo city <span class="demo-badge" title="Seeded sample data for the fictional demo city — not real payouts">Demo data</span></div>
+    <h1>Good deeds. <em>Real credit.</em></h1>
+    <ol class="flowline" aria-label="How a task becomes a reward"><li>Claim a spot</li><li>Show the QR</li><li>Clean up</li><li>Camera + AI check</li><li>Reward</li></ol>
+    <div class="istats" id="stats"></div>
+    <div class="ctas"><a class="btn sm accent" href="/demo.html">Try the demo →</a><span class="pplock">Rewards via <span class="pp-word">Pay<i>Pal</i></span></span></div>
+    <button class="collapse" id="intro-x" aria-label="Hide intro">—</button>
+  </section>
+  <div class="intro-mini" id="intro-open" hidden><button class="intro-pill" id="intro-about">About StreetCred</button><a class="intro-pill cta" href="/demo.html">Try the demo →</a><span id="demo-done"></span></div>
+
+  <div class="viewtoggle seg" id="viewtoggle" role="tablist" aria-label="Show map or list">
+    <button role="tab" data-view="map" class="on" aria-selected="true">Map</button><button role="tab" data-view="list" aria-selected="false">List</button>
+  </div>
+
+  <!-- Фильтры: статус и активные фильтры всегда на виду, остальное — в панели Filters. -->
+  <div class="toolbar">
+    <div class="seg" id="f-status" role="group" aria-label="Task status"><button data-v="open" class="on" aria-pressed="true">Open</button><button data-v="active" aria-pressed="false">In progress</button><button data-v="done" aria-pressed="false">Done</button></div>
+    <button class="fbtn" id="f-open" aria-haspopup="dialog" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 4h12M4.5 8h7M7 12h2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span class="fbtn-t">Filters</span><span class="fcount" id="f-count" hidden></span></button>
+    <div class="ftokens" id="f-tokens" aria-label="Active filters"></div>
+  </div>
+  <div class="filters-bg" id="filters-bg" hidden></div>
+  <section class="filters" id="filters" role="dialog" aria-modal="true" aria-labelledby="filters-h" hidden>
+    <div class="fhead"><h2 id="filters-h">Filters</h2><button class="fx" id="f-close" aria-label="Close filters"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>
+    <div class="fbody">
+      <fieldset class="fsec"><legend>Practical</legend>
+        <div class="chips" id="f-practical">
+          <button class="chip" data-f="near" aria-pressed="false" title="Uses your location only after you press it">Nearby</button>
+          <button class="chip" data-f="kit" aria-pressed="false" title="A basic kit is enough: gloves and bags (free at the Public Works yard) or household items like a broom">No special tools</button>
+          <button class="chip" data-f="solo" aria-pressed="false">Solo-friendly</button>
+        </div>
+      </fieldset>
+      <fieldset class="fsec"><legend>Type</legend><div class="chips" id="f-kind"></div></fieldset>
+      <div class="fsec fgrid">
+        <label><span>Neighborhood</span><select id="f-district" class="pillselect"><option value="">All neighborhoods</option></select></label>
+        <label><span>Sort</span><select id="f-sort" class="pillselect"><option value="reward">Highest reward</option><option value="new">Newest</option></select></label>
+      </div>
+      <div class="fsec"><label class="toggle"><input type="checkbox" id="f-cams" checked><span>Show cameras on the map <small>(when zoomed in)</small></span></label></div>
+    </div>
+    <div class="ffoot"><button class="btn ghost" id="f-clear">Clear all</button><button class="btn primary" id="f-done">Show spots</button></div>
+  </section>
+
+  <section class="deck-wrap" aria-label="Spots">
+    <div class="deck-head">
+      <div class="deck-sum"><span id="deck-count" aria-live="polite">Loading spots…</span><span class="deck-filters" id="deck-filters"></span></div>
+      <span class="deck-nav"><button class="btn sm ghost" id="surprise">✦ Surprise me</button><button id="prev" aria-label="Previous spot">←</button><button id="next" aria-label="Next spot">→</button></span>
+    </div>
+    <div class="deck" id="deck" aria-busy="true"><div class="tcard skel" aria-hidden="true"><div class="ph"></div><div class="body"><i></i><i></i><i></i></div></div><div class="tcard skel" aria-hidden="true"><div class="ph"></div><div class="body"><i></i><i></i><i></i></div></div><div class="tcard skel" aria-hidden="true"><div class="ph"></div><div class="body"><i></i><i></i><i></i></div></div></div>
+  </section>
+
+  <aside class="sheet" id="sheet" aria-hidden="true"></aside>
+</main>
+<script src="/vendor/leaflet.js"></script><script src="/vendor/leaflet.markercluster.js"></script>
+<script type="module" src="/js/map.js"></script>
+</body></html>

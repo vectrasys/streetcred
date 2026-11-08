@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css"><link rel="stylesheet" href="/css/community.css">
+<title>Heroes · StreetCred</title><meta name="description" content="Neighborhood heroes of a fictional demo city, ranked by verified deeds, then a fictional 90-day demo history. Demo rewards are not payouts.">
+</head><body class="community-page impact-page"><main class="page"><div class="wrap">
+<div class="community-heading"><div><div class="eyebrow">Neighborhood heroes</div><h1>Small acts.<br><em>A better block.</em></h1><p class="muted">Meet the neighbors taking care of their streets. Contributions come first; reward amounts are secondary.</p></div></div>
+<div class="community-demo-note"><b>Fictional demo city. History and rewards are illustrative; no real payouts. Portraits are generated.</b></div>
+<section id="verified-summary" aria-label="Verified program contributions"></section>
+<div class="community-contributors-head"><div><div class="eyebrow">Top heroes</div><h2 id="top-heading">Care adds up.</h2><p class="small muted">Rank: verified deeds, then demo deeds, then name. Reward amounts never decide rank.</p><p class="community-history-note">Demo history · <span id="demo-period">last 90 days</span></p></div><label>Neighborhood<select id="neighborhood"><option value="">All neighborhoods</option></select></label></div>
+<p id="contributor-count" class="small muted" role="status">Loading heroes…</p>
+<ol id="featured" class="community-featured" aria-labelledby="top-heading"></ol>
+<div id="verified-ranking" class="community-impact-layout"><div class="card community-table-wrap"><table class="t community-contributors"><caption class="sr-only">Top 10 heroes</caption><thead><tr><th scope="col">Rank</th><th scope="col">Hero</th><th scope="col">Neighborhood</th><th scope="col" class="num">Demo deeds</th><th scope="col" class="num">Demo rewards</th></tr></thead><tbody id="contributors"></tbody></table></div><aside class="card community-hoods"><h2>By neighborhood</h2><p class="small muted">Demo-history deeds for the heroes shown.</p><div id="hoods"></div></aside></div>
+<details id="all-contributors" class="community-all" hidden><summary>Show all heroes</summary><div class="card community-table-wrap"><table class="t community-contributors"><caption class="sr-only">Heroes ranked 11 and below</caption><thead><tr><th scope="col">Rank</th><th scope="col">Hero</th><th scope="col">Neighborhood</th><th scope="col" class="num">Demo deeds</th><th scope="col" class="num">Demo rewards</th></tr></thead><tbody id="rest-contributors"></tbody></table></div></details>
+<section id="sample-examples" aria-labelledby="examples-heading"></section>
+<p class="small muted" id="impact-source"></p>
+</div></main><script type="module" src="/js/heroes.js"></script></body></html>

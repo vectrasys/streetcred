@@ -1,0 +1,150 @@
+/* Пошаговое демо StreetCred. Палитра и шрифты — из site.css. */
+main.page.demo{padding-top:24px}
+
+/* Компактная шапка: название, слоган, правда о демо — всегда видна */
+.dhead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;margin-bottom:16px}
+.dhead h1{font:500 34px/1.1 var(--serif);margin:4px 0 0;letter-spacing:-.01em}
+.dhead h1 em{font-style:italic;color:var(--accent);font-weight:400;margin-left:.3em}
+.truth{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
+.truth li{font:600 12.5px var(--sans);padding:5px 11px;border-radius:99px;background:var(--warn-bg);color:var(--warn);border:1px solid #ead6b0}
+
+/* Прогресс: 7 шагов */
+.stepper{list-style:none;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;padding:0;margin:0 0 18px;counter-reset:s}
+.stepper li{counter-increment:s;font-size:12.5px;color:var(--muted);border-top:3px solid var(--line2);padding-top:7px}
+.stepper li::before{content:counter(s) ". ";font-weight:600}
+.stepper li.done{color:var(--ink2);border-color:var(--ink2)}
+.stepper li.on{color:var(--accent);border-color:var(--accent);font-weight:600}
+.steptext{display:none}
+
+.stage{min-height:360px;scroll-margin-top:76px}
+.loading{padding:40px 0}
+
+/* Шаг: кадр + панель */
+.dstep{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:start}
+.dstep.tight{gap:18px;margin-top:12px}
+/* элементы сетки могут сжиматься уже своего содержимого (подпись в одну строку на мобильном не раздувает шаг) */
+.dstep>*{min-width:0}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+.panel.solo{max-width:640px}
+.panel h2{font-size:26px;margin:4px 0 8px}
+.panel .short{margin:0 0 10px;color:var(--ink2)}
+.reward{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+.bigmoney{font:500 52px/1 var(--serif);color:var(--accent);font-variant-numeric:lining-nums}
+.who{margin:12px 0 0}
+.cap{font-size:12.5px;color:var(--muted);margin:6px 2px 0}
+
+/* Действия: обычный ряд кнопок; на мобильном этот же ряд прилипает к низу (без дублей) */
+.actbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.demo .btn.lg{min-height:44px}
+.demo .btn:focus-visible,.demo summary:focus-visible,.demo a:focus-visible{outline:2px solid var(--ink);outline-offset:2px;box-shadow:none}
+/* range невидим (opacity:0), поэтому фокус показываем на ручке ползунка */
+.compare:focus-within .handle::after{outline:2px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 5px rgba(255,255,255,.9),0 1px 4px rgba(0,0,0,.4)}
+.compare:focus-within{outline:2px solid var(--ink);outline-offset:2px}
+
+/* Кадр камеры */
+.demo .frame{position:relative;margin:0;background:#111;border-radius:16px;overflow:hidden}
+.demo .frame img{width:100%;height:100%;object-fit:contain;display:block}
+.demo .frame .roi{position:absolute;border:2px solid #ffd166;border-radius:6px;box-shadow:0 0 0 9999px rgba(0,0,0,.25)}
+.demo .frame .roi span{position:absolute;left:-2px;top:-22px;background:#ffd166;color:#1b1300;font:700 10.5px var(--sans);padding:2px 7px;border-radius:5px 5px 5px 0;white-space:nowrap}
+.demo .frame .heat{position:absolute;display:grid;pointer-events:none}
+.demo .frame .scan{position:absolute;inset:0;background:linear-gradient(90deg,transparent 0,rgba(255,209,102,.0) 40%,rgba(255,209,102,.35) 50%,transparent 60%);background-size:200% 100%;animation:scan 1.6s linear infinite;pointer-events:none}
+@keyframes scan{from{background-position:120% 0}to{background-position:-20% 0}}
+
+/* Проверка */
+.checks{list-style:none;padding:0;margin:6px 0 10px}
+.checks li{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.checks li i{width:16px;height:16px;border-radius:50%;border:2px solid var(--line2)}
+.checks li.busy i{border-color:var(--ink2);border-right-color:transparent;animation:spin .8s linear infinite}
+.checks li.ok i{background:var(--ok);border-color:var(--ok)}.checks li.bad i{background:var(--bad);border-color:var(--bad)}.checks li.skip i{background:#ebe7dd;border-color:var(--line2)}
+.checks li b{font-weight:500;font-size:12px;color:var(--muted);text-align:right}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bad{color:var(--bad)}
+
+/* Результат */
+.proof{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px 28px}
+.proofhead{padding-right:150px}
+.proof h2{font-size:34px;margin:4px 0 6px}.proof .reason{color:var(--ink2);margin:0 0 16px}
+.proof .stamp{position:absolute;right:26px;top:24px;font:700 15px var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border:2.5px solid;border-radius:8px;transform:rotate(-6deg)}
+.proof.approved .stamp{color:var(--ok)}.proof.rejected .stamp{color:var(--bad)}.proof.review .stamp,.proof.in_review .stamp{color:var(--warn)}
+.compare{position:relative;max-width:880px;border-radius:16px;overflow:hidden;background:#111;touch-action:pan-y}
+.compare img{display:block;width:100%}
+.compare .ca{position:absolute;inset:0;height:100%;object-fit:cover;clip-path:inset(0 0 0 var(--pos))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.compare input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+.compare .lbl{position:absolute;top:10px;font:700 12px var(--sans);letter-spacing:.07em;text-transform:uppercase;padding:5px 11px;border-radius:99px;pointer-events:none}
+.compare .lb{left:10px;background:#191917;color:#fff}
+.compare .la{right:10px;background:#1f5c3a;color:#fff}
+.rewardline{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;margin:18px 0 0;padding:16px 18px;border-radius:16px;background:var(--ok-bg);border:1px solid #c9dccb;max-width:880px}
+.rewardline .bigmoney{color:var(--ok);font-size:44px}
+.rewardline.none{background:#f1eee6;border-color:var(--line)}
+.noreward{font:500 30px/1.1 var(--serif);color:var(--ink2)}
+.paystate{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.pill.sim{display:inline-block;font:600 12.5px var(--sans);padding:4px 11px;border-radius:99px;background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn)}
+.howchecked{margin-top:28px;border-top:1px solid var(--line);padding-top:18px}
+.howchecked h3{font-size:19px;margin:0}
+.proof .facts td:first-child{width:22px;font-weight:700}
+.recorded{margin:18px 0 0;border:1px dashed var(--warn);border-radius:14px;padding:12px 16px;background:var(--warn-bg)}
+.recorded summary{font-weight:600;cursor:pointer}
+.recorded code{font-size:11.5px}
+.tablewrap{overflow-x:auto}
+
+/* Выплата */
+.receipt-card{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px 28px;max-width:640px}
+.receipt-card h2{margin:4px 0 8px;padding-right:200px}
+.receipt-card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:12px 0}.receipt-card dt{color:var(--muted)}.receipt-card dd{margin:0;overflow-wrap:anywhere}
+.simbadge{position:absolute;right:20px;top:20px;background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn);border-radius:99px;padding:3px 11px;font:600 12px var(--sans)}
+.sandbox{margin-top:16px;max-width:640px;border-left:3px solid var(--pp-navy);padding:6px 0 6px 14px;overflow-wrap:anywhere}
+.maplink{margin:8px 0 0}
+
+/* About this demo */
+.about{margin-top:28px;max-width:820px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.about summary{cursor:pointer;padding:12px 16px;font-weight:600;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;min-height:44px}
+.about .aboutbody{padding:0 16px 12px;font-size:14px;color:var(--ink2)}
+.aichip{font:500 12px var(--sans);padding:3px 10px;border-radius:99px;border:1px solid var(--line2);color:var(--muted)}
+.aichip.on{color:var(--ok);border-color:var(--ok);background:var(--ok-bg)}
+.aichip.off{color:var(--warn);border-color:var(--warn);background:var(--warn-bg)}
+
+@media(max-width:860px){
+  main.page.demo{padding-top:12px;padding-bottom:32px}
+  .dhead{gap:8px;margin-bottom:10px}
+  .dhead .eyebrow{display:none}
+  .dhead h1{font-size:20px}
+  /* Название уже есть в шапке сайта: на мобильном слово скрыто визуально, но остаётся в заголовке */
+  .dhead .brandword{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .dhead h1 em{margin-left:0}
+  .truth li{font-size:11.5px;padding:3px 9px}
+  .media .cap{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .stepper{grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin:0 0 4px}
+  .stepper li{font-size:0;border-top-width:4px;padding-top:0}.stepper li::before{content:none}
+  .steptext{display:block;font:600 12px var(--sans);color:var(--muted);margin:0 0 8px}
+  .dstep{grid-template-columns:1fr;gap:10px}
+  .panel{padding:14px 16px;border-radius:16px}
+  .panel h2{font-size:21px;margin:2px 0 4px}
+  .panel .short{font-size:14.5px;margin-bottom:6px}
+  .bigmoney{font-size:36px}
+  .cap{margin-top:4px}
+  /* Тот же ряд действий прилипает к низу экрана, пока виден шаг; дальше футер не перекрывается */
+  .actbar{position:sticky;bottom:0;z-index:5;margin:12px -16px -14px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(rgba(251,249,244,.86),var(--paper) 30%);border-top:1px solid var(--line);border-radius:0 0 16px 16px}
+  .actbar .btn{flex:1 1 auto}
+  .proof .actbar,.stage>.actbar{margin:16px -18px 0;border-radius:0}
+  .stage>.actbar{margin:16px 0 0;border-radius:14px}
+  .proof{padding:18px 18px}
+  .proofhead{padding-right:0}
+  .proof .stamp{position:static;display:inline-block;margin-bottom:8px;font-size:13px}
+  .proof h2{font-size:26px}
+  .rewardline{padding:12px 14px}.rewardline .bigmoney{font-size:34px}
+  .paystate{align-items:flex-start}
+  .receipt-card{padding:18px 16px}.receipt-card h2{padding-right:0}
+  .simbadge{position:static;display:inline-block;margin-bottom:8px}
+}
+@media(max-width:360px){
+  .dhead h1{font-size:18px}
+  .truth{gap:4px}.truth li{font-size:10.5px;padding:2px 7px}
+  .media .cap{display:none}  /* подпись камеры — в About this demo; тег «Demo camera frame» на кадре остаётся */
+  .actbar .btn.lg{padding:11px 14px;font-size:14.5px}
+}
+@media(prefers-reduced-motion:reduce){
+  .demo .frame .scan{animation:none;display:none}
+  .checks li.busy i{animation:none;border-right-color:var(--ink2);border-style:dotted}
+}

@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run a pilot · StreetCred</title>
+<meta name="description" content="A concrete six-week StreetCred pilot for a campus, HOA or organization: budget, materials, rules, timeline, disputes and what to measure.">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<style>
+.pilot .lead{font:400 21px/1.45 var(--serif);max-width:820px;color:var(--ink2)}
+.pilot section{border-top:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:240px 1fr;gap:32px}
+.pilot section h2{font-size:24px}
+.pilot .note{border-left:3px solid var(--accent);background:var(--paper);padding:10px 14px;border-radius:0 12px 12px 0;font-size:14px;max-width:820px}
+.pilot table.t{max-width:820px}
+.pilot ol.time{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-width:820px}
+.pilot ol.time li{display:grid;grid-template-columns:110px 1fr;gap:14px}.pilot ol.time b{font:500 18px var(--serif)}
+.pilot ul{margin:0;padding-left:18px;max-width:820px}.pilot li{margin:4px 0}
+@media(max-width:760px){.pilot section{grid-template-columns:1fr;gap:10px}.pilot ol.time li{grid-template-columns:1fr;gap:2px}}
+</style></head><body>
+<main class="page pilot"><div class="wrap">
+<div class="eyebrow">StreetCred · pilot template</div>
+<h1>Run a six-week <em>pilot</em>.</h1>
+<p class="lead">For a campus, an HOA or any organization with cameras already watching shared spaces. A pilot answers one question with your own numbers: does paying for verified small fixes beat waiting for a crew?</p>
+<p class="note">This is a proposed template. StreetCred has no pilot customers yet, and the figures below are an example budget for you to set — not results.</p>
+
+<section id="scope"><h2>Scope</h2><ul>
+<li>One site: a campus, an HOA or a business park.</li>
+<li>Start with 2–3 cameras you already operate, pointed at shared outdoor areas; 10–20 cameras is a possible phase 2.</li>
+<li>Small, safe tasks only: litter, bagged trash, boxes, flyers, weeds, graffiti on surfaces you own.</li>
+<li>5–10 participants to start: adult (18+) residents, students or employees who opt in.</li></ul></section>
+
+<section id="budget"><h2>Example budget</h2><div>
+<table class="t"><thead><tr><th>Item</th><th class="num">Example</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Reward pool</td><td class="num money">$1,500</td><td>Set by you; stops new tasks when used.</td></tr>
+<tr><td>Reward per task</td><td class="num money">$5–$75</td><td>The current program limits; you set each task’s reward before publishing.</td></tr>
+<tr><td>Payout fees</td><td class="num">Your PayPal pricing</td><td>Rewards go out through PayPal Payouts; check fees for your account before the pilot.</td></tr>
+<tr><td>Materials</td><td class="num">Your cost</td><td>Gloves, bags, grabbers at one pickup point.</td></tr>
+<tr><td>Staff time</td><td class="num">≈ 1–2 h / week</td><td>Publishing tasks and reviewing the cases the camera and AI are unsure about (estimate).</td></tr>
+</tbody></table></div></section>
+
+<section id="rules"><h2>Conditions</h2><ul>
+<li>Work only on property you control; never on private lots or roads with traffic.</li>
+<li>Hazards (needles, chemicals, heavy items) are reported, not touched.</li>
+<li>Cameras check the work area, not people: no facial recognition. Proposed policy: frames for a task are kept 30 days for disputes, then deleted.</li>
+<li>One-time QR check-in per claimed task; a claim reserves the spot for 48 hours.</li>
+<li>Rewards over your tax threshold need a Form W-9 before more payouts (US); your finance team decides the threshold.</li></ul></section>
+
+<section id="timeline"><h2>Timeline</h2><ol class="time">
+<li><b>Week 0</b><span>Pick cameras, outline work areas, set the reward pool and limits, brief your team.</span></li>
+<li><b>Week 1</b><span>Soft launch on 2–3 cameras with 5–10 invited participants; publish the first tasks.</span></li>
+<li><b>Weeks 2–5</b><span>Keep the same cameras and participants; payouts every business day; weekly review of rejected and disputed deeds.</span></li>
+<li><b>Week 6</b><span>Stop new tasks, pay what is approved, compare the numbers below with your usual cleanup process and decide on phase 2 (10–20 cameras).</span></li></ol></section>
+
+<section id="disputes"><h2>Review and disputes</h2><ul>
+<li>Proposed review SLA: a reviewer decides deeds the camera and AI are unsure about within 2 business days.</li>
+<li>Proposed appeal policy: a participant can ask for a human review within 14 days of a decision.</li>
+<li>A reviewer sees the same before/after frames, the outlined area, every check and the AI answer.</li>
+<li>Approved deeds join the next payout batch; delivery status comes from PayPal. A returned or unclaimed payout is re-issued only after a human reviews the item and the wallet.</li></ul></section>
+
+<section id="measure"><h2>What to measure</h2><div><p>None of these are known yet; the pilot exists to measure them.</p><ul>
+<li>Tasks published, claimed, approved, rejected and sent to human review.</li>
+<li>Time from a reported problem to a verified fix.</li>
+<li>How often a reviewer overturns the camera and AI decision.</li>
+<li>Cost per verified fix (rewards + fees + staff time) against your usual process.</li>
+<li>Payouts that did not arrive and why (PayPal status).</li></ul></div></section>
+
+<section id="next"><h2>See it first</h2><p><a class="btn lg accent" href="/demo.html">Walk through the guided demo</a> <a class="btn lg" href="/how.html">How verification works</a></p></section>
+</div></main>
+<script type="module">import { chrome } from '/js/common.js'; await chrome('pilot');</script>
+</body></html>

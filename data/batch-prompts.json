@@ -1,0 +1,800 @@
+{
+ "tasks": [
+  {
+   "id": "n01",
+   "kind": "litter",
+   "district": "grove",
+   "seed": 4001,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about fifteen meters away: food wrappers and paper cups around a bench in a small pocket park. The trash lies in one or two uneven messy clumps where it was dropped or blown, with a few stray pieces drifting away; most of the ground around it is clean. Soft morning sun. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people, no readable license plates, no letters, no words, no text.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n01"
+  },
+  {
+   "id": "n02",
+   "kind": "litter",
+   "district": "heights",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a winding hillside street of Craftsman bungalows among pine trees in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: litter in the grass strip between the sidewalk and the curb: a few flattened, faded, dirty items — a crushed paper cup, a fry box, a plastic bottle and some wrappers — half hidden in the grass and fallen leaves, scattered unevenly over a few meters, with one small clump by a mailbox post. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n03",
+   "kind": "litter",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a compact pile of crumpled paper cups and napkins against one arcade column on the opposite sidewalk. One compact, asymmetrical accumulation rests against a physical obstacle. Pieces overlap and partly conceal each other, with two isolated scraps nearby. Broad surrounding areas are bare. Late afternoon sun. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n04",
+   "kind": "litter",
+   "district": "millworks",
+   "seed": 7004,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a light industrial street with metal warehouses, chain-link fences and auto shops in a small coastal California town. In the middle distance, about twelve meters away, seen from above: a collapsed paper food bag, two dented cans and several crumpled wrappers overlapping at one fence foot; the bag is ordinary lunch-bag size and lies on its side. One compact, asymmetrical accumulation rests against a physical obstacle. Pieces overlap and partly conceal each other, with two isolated scraps nearby. Broad surrounding areas are bare. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Low morning coastal fog softens the distant buildings; nearby surfaces remain clear under diffuse gray light. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n04_v4"
+  },
+  {
+   "id": "n05",
+   "kind": "bin",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a normal-sized public trash bin under the arcade with refuse protruding from its opening and a compact spill touching one side of its base. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n06",
+   "kind": "bin",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a waterfront street of two-story Victorian storefronts by the old harbor in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a normal-sized public bin by the harbor railing, refuse protruding from its opening and a compact spill touching one side of its base. Overcast after the weekend. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n07",
+   "kind": "bin",
+   "district": "cooperage",
+   "seed": 4007,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking down diagonally at a street of old red-brick cannery warehouses converted into lofts with loading docks in a small coastal California town. In the middle distance, about fifteen meters away: an overflowing trash can next to a loading dock with boxes piled beside it. The trash lies in one or two uneven messy clumps where it was dropped or blown, with a few stray pieces drifting away; most of the ground around it is clean. Evening under street lights. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people, no readable license plates, no letters, no words, no text.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n07"
+  },
+  {
+   "id": "n08",
+   "kind": "bin",
+   "district": "grove",
+   "seed": 4008,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about fifteen meters away: a tipped-over residential trash bin with litter spilled on the sidewalk. The trash lies in one or two uneven messy clumps where it was dropped or blown, with a few stray pieces drifting away; most of the ground around it is clean. Windy overcast morning. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people, no readable license plates, no letters, no words, no text.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n08"
+  },
+  {
+   "id": "n09",
+   "kind": "butts",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: cigarette butts around a bus stop bench: small white and tan filters, sparse and uneven, collected in the pavement joints, under the bench and along the curb gutter, with a few dark flattened gum spots on the grey pavement. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n10",
+   "kind": "butts",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: cigarette butts by a warehouse loading door: small white and tan filters, sparse and uneven, collected along the base of the brick wall, in the pavement joints and in the gutter, on dark grey concrete. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n11",
+   "kind": "butts",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a waterfront street of two-story Victorian storefronts by the old harbor in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: cigarette butts outside a bar entrance: small white and tan filters, sparse and uneven, around a sidewalk ashtray bin, in the pavement joints and along the curb gutter, on wet dark pavement. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Early morning, wet pavement. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n12",
+   "kind": "leaves",
+   "district": "grove",
+   "seed": 7012,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about twelve meters away, seen from above: dull brown and orange fallen leaves overlapping in one irregular drift at a picket-fence corner, with a smaller thin patch nearby and broad bare pavement between them; drift depth tapers unevenly. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Golden late afternoon. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n12_v4"
+  },
+  {
+   "id": "n13",
+   "kind": "leaves",
+   "district": "heights",
+   "seed": 7013,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a winding hillside street of Craftsman bungalows among Monterey pines in a small coastal California town. In the middle distance, about twelve meters away, seen from above: pine needles and brown leaves in one deeper accumulation at a porch step corner, with irregular thin patches nearby and bare sidewalk between them. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Overcast. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n13_v4"
+  },
+  {
+   "id": "n14",
+   "kind": "leaves",
+   "district": "seaview",
+   "seed": 4014,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking down diagonally at a street of mid-century single-story ranch houses with wide lawns and carports in a small coastal California town. In the middle distance, about fifteen meters away: fallen leaves blown against a garage door and the sidewalk. The leaves are piled unevenly, thick against the curb and fence and patchy elsewhere. Soft morning sun. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people, no readable license plates, no letters, no words, no text.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n14"
+  },
+  {
+   "id": "n15",
+   "kind": "leaves",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: two unequal drifts of dull brown leaves inside the more distant arcade corners, edges tapering, most of the arcade floor bare. Late afternoon. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets or picture-in-picture, no security camera or dome camera anywhere in the image.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n16",
+   "kind": "weeds",
+   "district": "seaview",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a street of mid-century single-story ranch houses with lawns and carports in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: weeds along the sidewalk: low dandelion and plantain rosettes and tufts of grass growing out of the joints between the concrete sidewalk slabs and along the curb, a few with small yellow flowers, uneven and patchy; ordinary lawns behind. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n17",
+   "kind": "weeds",
+   "district": "grove",
+   "seed": 7017,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about twelve meters away, seen from above: scruffy overgrown weeds, some dry and yellowed, growing out from the base of a picket fence and over the edge of the sidewalk. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Morning. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n17_v4"
+  },
+  {
+   "id": "n18",
+   "kind": "weeds",
+   "district": "millworks",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a light industrial street with metal warehouses and chain-link fences in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: weeds along a cracked sidewalk next to a warehouse wall and chain-link fence: low dandelion and plantain rosettes and grass tufts growing from cracks and along the base of the wall and fence, patchy and uneven. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n19",
+   "kind": "flyers",
+   "district": "grove",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a quiet street of small Victorian cottages with picket fences in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: three weathered paper remnants attached to the lower section of a wooden utility pole across the street, with curled torn edges and washed-out ink smudges; the whole pole base and surrounding sidewalk are visible. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n20",
+   "kind": "flyers",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a few torn weathered paper remnants on the lower part of a lamp post across the street, washed-out ink smudges; the entire post and its base are visible with sidewalk around it. Morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n21",
+   "kind": "windblown",
+   "district": "seaview",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a street of mid-century single-story ranch houses with lawns and carports in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: wind-blown trash at a chain-link fence along the sidewalk: two crumpled white plastic bags snagged low in the fence mesh near the ground and paper scraps and a cup piled loosely at the base of the fence. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Overcast, windy. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n22",
+   "kind": "windblown",
+   "district": "millworks",
+   "seed": 7022,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a light industrial street with metal warehouses, chain-link fences and auto shops in a small coastal California town. In the middle distance, about twelve meters away, seen from above: two flattened plastic bags and a few paper scraps collapsed against the base of a chain-link fence at one corner, bag-sized, one small flap snagged on the wire. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Bright afternoon. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n22_v4"
+  },
+  {
+   "id": "n23",
+   "kind": "beach",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a waterfront street of two-story Victorian storefronts beside a small harbor beach in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: beach litter on the sand along the high-tide line: sparse mixed debris — plastic bottles, cans, cups and torn plastic film — tangled with dark seaweed and bits of driftwood, scattered unevenly in a long line. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Early morning after the weekend. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n24",
+   "kind": "beach",
+   "district": "grove",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted about 6 meters high on a utility pole at the side of the street, high-angle view looking down at about 35 degrees onto a shoreline street of small Victorian cottages with picket fences right above a small sandy cove beach in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: beach litter on the sand close to the water's edge along the high-tide line, at the bottom of a beach access path: a small tangle of old fishing line, a few plastic bottles, crushed cups and torn plastic film mixed with dark seaweed, scattered unevenly. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n25",
+   "kind": "beach",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal street CCTV camera mounted high above the street, high-angle view looking down at about 35 degrees onto a waterfront street of two-story Victorian storefronts beside a wooden boardwalk and a small harbor beach in a small coastal California town. Moderate wide-angle lens with only mild distortion: straight buildings and curbs stay straight, not a fisheye. The camera sees the street from above: sidewalk, curb, the tops of parked cars. In the middle distance: litter by a bench on the boardwalk and on the sand below it: an overflowing beach trash can with a few cups, food containers and a plastic bag spilled around it, flattened and dirty, scattered unevenly. The problem is realistic in scale and looks like an ordinary real-life photo, not staged or arranged. Late afternoon. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no people, no readable text or signs, no logos, no timestamp or overlays, no security camera, dome camera or camera pole anywhere in the image; nothing in the near foreground.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n26",
+   "kind": "branches",
+   "district": "heights",
+   "seed": 7026,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a winding hillside street of Craftsman bungalows among Monterey pines in a small coastal California town. In the middle distance, about twelve meters away, seen from above: one fallen pine side branch, about 1.5 meters long with a wrist-thick broken end, lying diagonally across part of the sidewalk beside its source tree; a localized pale branch stub on the nearby tree matches the fallen branch thickness, intact bark surrounds the break. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Wet pavement after rain. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n26_v4"
+  },
+  {
+   "id": "n27",
+   "kind": "branches",
+   "district": "grove",
+   "seed": 7027,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about twelve meters away, seen from above: one fallen side branch lying along the sidewalk edge below a tree on the far side of a picket fence; a small localized pale break where it detached is visible on the tree, intact bark around it; a few twigs nearby. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Overcast after rain. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n27_v4"
+  },
+  {
+   "id": "n28",
+   "kind": "graffiti",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a metal roller door with several overlapping hasty spray-paint tags of different sizes in black and red, partly painted over with a mismatched gray patch, illegible. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n29",
+   "kind": "graffiti",
+   "district": "millworks",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a light industrial street with metal warehouses and chain-link fences in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a sheet-metal fence with a hasty silver outline scrawl and black drips on one panel and a small faded tag on another, illegible. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n30",
+   "kind": "graffiti",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a green electrical utility box covered with small black marker tags and one spray-paint drip, illegible. Morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n31",
+   "kind": "graffiti",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a waterfront street of two-story Victorian storefronts by the old harbor in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a blue street mailbox with black marker scribbles and a hasty white spray-paint scrawl on its side, illegible. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n32",
+   "kind": "graffiti",
+   "district": "heights",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a winding hillside street of Craftsman bungalows among pine trees in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a concrete retaining wall with faded red and black tags partly buffed out with mismatched paint patches, illegible. Late afternoon. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n33",
+   "kind": "graffiti",
+   "district": "seaview",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of mid-century single-story ranch houses with lawns and carports in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a wooden backyard fence with a sloppy white spray-paint scrawl and a small black tag, illegible. Soft morning sun. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n34",
+   "kind": "stickers",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a street sign post covered with a dense colorful patchwork of many weathered stickers, clearly visible from a distance; the sign face is blank. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n35",
+   "kind": "stickers",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a gray electrical box covered on one side with a dense colorful patchwork of weathered and half-torn stickers, clearly visible. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n36",
+   "kind": "stickers",
+   "district": "wharf",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a waterfront street of two-story Victorian storefronts by the old harbor in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: an ordinary gray parking meter of normal size on the sidewalk, its head and pole covered with many small weathered stickers; storefronts are blank. Morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets or picture-in-picture, no security camera or dome camera anywhere in the image.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n37",
+   "kind": "stickers",
+   "district": "millworks",
+   "seed": 7037,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a light industrial street with metal warehouses, chain-link fences and auto shops in a small coastal California town. In the middle distance, about twelve meters away, seen from above: a light pole with its lower section wrapped in a dense colorful patchwork of weathered and torn stickers, clearly visible. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Low morning coastal fog softens the distant buildings; nearby surfaces remain clear under diffuse gray light. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n37_v4"
+  },
+  {
+   "id": "n38",
+   "kind": "bags",
+   "district": "grove",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a quiet street of small Victorian cottages with picket fences in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: three black garbage bags left at the curb next to a picket fence. Early morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n39",
+   "kind": "bags",
+   "district": "seaview",
+   "seed": 4039,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking down diagonally at a street of mid-century single-story ranch houses with wide lawns and carports in a small coastal California town. In the middle distance, about fifteen meters away: black garbage bags dumped on the grass strip by the curb. The trash lies in one or two uneven messy clumps where it was dropped or blown, with a few stray pieces drifting away; most of the ground around it is clean. Overcast. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people, no readable license plates, no letters, no words, no text.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n39"
+  },
+  {
+   "id": "n40",
+   "kind": "bags",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: garbage bags piled beside a dumpster in an alley behind lofts. Dim blue-gray ambient evening light, with isolated warm pools beneath streetlights and darker unlit pavement. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n41",
+   "kind": "bags",
+   "district": "wharf",
+   "seed": 7041,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a waterfront street of two-story Victorian storefronts near the old harbor in a small coastal California town. In the middle distance, about twelve meters away, seen from above: one group of torn black garbage bags with a short one-sided spill at the edge of a harbor parking lot. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Low morning coastal fog softens the distant buildings; nearby surfaces remain clear under diffuse gray light. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n41_v4"
+  },
+  {
+   "id": "n42",
+   "kind": "boxes",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: four damp flattened corrugated cartons overlapping in a low irregular heap against one arcade pillar, with bent corners and dark wet edges. Wet pavement after rain. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n43",
+   "kind": "boxes",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a pile of empty cardboard moving boxes left on the sidewalk. Late afternoon. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n44",
+   "kind": "drain",
+   "district": "heights",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a winding hillside street of Craftsman bungalows among pine trees in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a heap of wet brown and orange fallen leaves lying in the gutter tight against the curb along the sidewalk edge (not in the middle of the road or intersection), sitting in a shallow puddle of rainwater that spreads a little into the lane. Overcast, damp. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets or picture-in-picture, no security camera or dome camera anywhere in the image.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n45",
+   "kind": "drain",
+   "district": "grove",
+   "seed": 9450,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a street of tiny Victorian board-and-batten cottages with picket fences in a small coastal California town. In the middle distance, about twelve meters away, seen from above: a thick soggy pile of fallen leaves and twigs clogging the gutter at the curb, completely covering the storm drain so that only leaves are visible; leaves are matted flat and wet, and standing water spreads into the street beside the pile. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Wet pavement after light rain. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n45_v6a"
+  },
+  {
+   "id": "n46",
+   "kind": "couch",
+   "district": "seaview",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of mid-century single-story ranch houses with lawns and carports in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: an old abandoned fabric couch on the sidewalk by the curb. Soft morning sun. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets or picture-in-picture, no security camera or dome camera anywhere in the image.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n47",
+   "kind": "mattress",
+   "district": "millworks",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a light industrial street with metal warehouses and chain-link fences in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a dumped mattress leaning against a chain-link fence. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets or picture-in-picture, no security camera or dome camera anywhere in the image.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n48",
+   "kind": "tires",
+   "district": "heights",
+   "seed": 7048,
+   "prompt": "Real CCTV surveillance still frame, 16:9. High-angle oblique view from about five meters up at the side of the street, looking steeply down diagonally at a winding hillside street of Craftsman bungalows among Monterey pines in a small coastal California town. In the middle distance, about twelve meters away, seen from above: exactly two worn car tires touching at one edge of a gravel turnout, one partly overlapping the other. The problem is a modest part of the wider street scene, at ordinary real-world scale, but clearly identifiable. Low morning coastal fog softens the distant buildings; nearby surfaces remain clear under diffuse gray light. Surveillance footage quality, mild wide-angle lens, auto exposure, muted colors, slight video compression, realistic. Nothing in the foreground: no walls, no roof edges, no mounts, no equipment, no camera of any kind anywhere in the image. No on-screen icons, overlays, timestamps or logos. No people. Storefronts and street furniture have blank unlettered sign surfaces; vehicle plates are indistinct; any marks are illegible, with no recognizable words, numbers or logos.",
+   "model": "Ming-Image-0.1-Design (mflux q8/te4, local)",
+   "size": "1024x576",
+   "version": "n48_v4"
+  },
+  {
+   "id": "n49",
+   "kind": "cart",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of white stucco Spanish Colonial buildings with red tile roofs and arcades in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: one ordinary red shopping cart standing upright on the opposite sidewalk beneath the arcade, fully visible with pavement around all four wheels. Morning. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n50",
+   "kind": "debris",
+   "district": "millworks",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a light industrial street with metal warehouses and chain-link fences in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a small pile of broken drywall and lumber scraps by a fence. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n51",
+   "kind": "debris",
+   "district": "cooperage",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of old red-brick warehouses with loading docks in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a pile of renovation debris next to a loading dock: broken drywall sheets, old lumber pieces with protruding nails and a torn bag of plaster leaning on it, chalky white dust around. Overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n52",
+   "kind": "debris",
+   "district": "heights",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a winding hillside street of Craftsman bungalows among pine trees in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: a heap of remodeling debris at the curb in front of a bungalow: old weathered boards, broken ceramic tiles and a rolled-up piece of old carpet. Soft morning sun. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n53",
+   "kind": "debris",
+   "district": "seaview",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a city CCTV surveillance camera mounted about 7 meters high on a utility pole at a street corner. Steep high-angle view looking down at about 40 degrees onto a street of mid-century single-story ranch houses with lawns and carports in a small coastal California town, through a wide-angle security lens with slight barrel distortion; the camera sees the whole street segment from above: sidewalks, curbs, the tops of parked cars. Clearly visible in the middle of the frame: kitchen-remodel debris dumped on the lawn strip by the sidewalk: old cabinet doors, broken countertop pieces and a small pile of broken tiles. Late afternoon. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. No people, no readable text or signs, no logos, no timestamp or overlays; the camera itself is not visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n54",
+   "kind": "beach",
+   "district": "grove",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal CCTV camera mounted about 6 meters high on a utility pole above a beach access, high-angle view looking down at about 35 degrees onto a small sandy cove below a row of Victorian cottages with picket fences in a small coastal California town. Moderate wide-angle lens with only mild distortion, not a fisheye. In the middle distance on the sand, close to the water's edge: litter left after a weekend picnic near the waterline: a few plastic bottles, crushed cans, a paper bag and food wrappers half buried in the sand next to a driftwood log. The litter is realistic in scale, uneven and not staged. A few beachgoers are visible at a distance — walking along the waterline, sitting on towels, a person with a dog — and every person's face is blurred with a soft privacy blur, as in anonymized municipal camera footage. Late morning, light overcast. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n55",
+   "kind": "beach",
+   "district": "grove",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal CCTV camera mounted about 6 meters high on a utility pole above a beach access, high-angle view looking down at about 35 degrees onto a wide sandy beach below a shoreline boulevard with small Victorian cottages in a small coastal California town. Moderate wide-angle lens with only mild distortion, not a fisheye. In the middle distance on the sand, close to the water's edge: plastic cups, a torn plastic bag and bottle caps tangled with seaweed along the high-tide line, a few pieces washed close to the waves. The litter is realistic in scale, uneven and not staged. A few beachgoers are visible at a distance — walking along the waterline, sitting on towels, a person with a dog — and every person's face is blurred with a soft privacy blur, as in anonymized municipal camera footage. Bright midday. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  },
+  {
+   "id": "n56",
+   "kind": "beach",
+   "district": "plaza",
+   "seed": null,
+   "prompt": "Generate an image, 16:9 landscape: a realistic still frame from a municipal CCTV camera mounted about 6 meters high on a utility pole above a beach access, high-angle view looking down at about 35 degrees onto a sandy beach next to white stucco Spanish Colonial buildings with red tile roofs in a small coastal California town. Moderate wide-angle lens with only mild distortion, not a fisheye. In the middle distance on the sand, close to the water's edge: an overflowing beach trash can near the sand with cups, a pizza box and plastic bags spilled around it and blown toward the water. The litter is realistic in scale, uneven and not staged. A few beachgoers are visible at a distance — walking along the waterline, sitting on towels, a person with a dog — and every person's face is blurred with a soft privacy blur, as in anonymized municipal camera footage. Late afternoon, breezy. Typical surveillance image quality: muted colors, flat exposure, slight noise and compression. The photo is a single continuous unedited frame: no annotations, no circles or arrows, no highlight boxes, no insets, no readable text or signs, no logos, no timestamp or overlays, no security camera visible.",
+   "model": "Google Gemini app (gemini.google.com, image generation), 2026-10-04/05",
+   "size": "2752x1536 → 1024x576",
+   "version": "gemini"
+  }
+ ],
+ "views": [
+  {
+   "id": "vgrove1",
+   "district": "grove",
+   "seed": 2000,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove2",
+   "district": "grove",
+   "seed": 2001,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove3",
+   "district": "grove",
+   "seed": 2002,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, bright morning sun, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove4",
+   "district": "grove",
+   "seed": 2003,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove5",
+   "district": "grove",
+   "seed": 2004,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove6",
+   "district": "grove",
+   "seed": 2005,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vgrove7",
+   "district": "grove",
+   "seed": 2006,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, tiny Victorian board-and-batten cottages and Queen Anne houses with gingerbread trim, picket fences, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage1",
+   "district": "cooperage",
+   "seed": 2010,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage2",
+   "district": "cooperage",
+   "seed": 2011,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage3",
+   "district": "cooperage",
+   "seed": 2012,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage4",
+   "district": "cooperage",
+   "seed": 2013,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage5",
+   "district": "cooperage",
+   "seed": 2014,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage6",
+   "district": "cooperage",
+   "seed": 2015,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vcooperage7",
+   "district": "cooperage",
+   "seed": 2016,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, old red-brick cannery warehouses converted into lofts, corrugated metal sheds, loading docks, parked cars, trees, bright morning sun, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vwharf1",
+   "district": "wharf",
+   "seed": 2020,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, two-story Victorian Italianate storefronts with wooden cornices, old harbor buildings, weathered clapboard, parked cars, trees, bright morning sun, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vwharf2",
+   "district": "wharf",
+   "seed": 2021,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, two-story Victorian Italianate storefronts with wooden cornices, old harbor buildings, weathered clapboard, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vwharf3",
+   "district": "wharf",
+   "seed": 2022,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, two-story Victorian Italianate storefronts with wooden cornices, old harbor buildings, weathered clapboard, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vwharf4",
+   "district": "wharf",
+   "seed": 2023,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, two-story Victorian Italianate storefronts with wooden cornices, old harbor buildings, weathered clapboard, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vwharf5",
+   "district": "wharf",
+   "seed": 2024,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, two-story Victorian Italianate storefronts with wooden cornices, old harbor buildings, weathered clapboard, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vplaza1",
+   "district": "plaza",
+   "seed": 2030,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Spanish Colonial Revival buildings with white stucco walls, red clay tile roofs and arched arcades, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vplaza2",
+   "district": "plaza",
+   "seed": 2031,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Spanish Colonial Revival buildings with white stucco walls, red clay tile roofs and arched arcades, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vplaza3",
+   "district": "plaza",
+   "seed": 2032,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Spanish Colonial Revival buildings with white stucco walls, red clay tile roofs and arched arcades, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vplaza4",
+   "district": "plaza",
+   "seed": 2033,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Spanish Colonial Revival buildings with white stucco walls, red clay tile roofs and arched arcades, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vplaza5",
+   "district": "plaza",
+   "seed": 2034,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Spanish Colonial Revival buildings with white stucco walls, red clay tile roofs and arched arcades, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vheights1",
+   "district": "heights",
+   "seed": 2040,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Craftsman bungalows with deep porches and shingle siding on winding hillside streets among Monterey pines, parked cars, trees, bright morning sun, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vheights2",
+   "district": "heights",
+   "seed": 2041,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Craftsman bungalows with deep porches and shingle siding on winding hillside streets among Monterey pines, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vheights3",
+   "district": "heights",
+   "seed": 2042,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Craftsman bungalows with deep porches and shingle siding on winding hillside streets among Monterey pines, parked cars, trees, soft coastal fog, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vheights4",
+   "district": "heights",
+   "seed": 2043,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Craftsman bungalows with deep porches and shingle siding on winding hillside streets among Monterey pines, parked cars, trees, early evening dusk with street lights on, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vheights5",
+   "district": "heights",
+   "seed": 2044,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, Craftsman bungalows with deep porches and shingle siding on winding hillside streets among Monterey pines, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vseaview1",
+   "district": "seaview",
+   "seed": 2050,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, mid-century modern single-story ranch houses with low-pitched roofs, carports and wide lawns, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vseaview2",
+   "district": "seaview",
+   "seed": 2051,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, mid-century modern single-story ranch houses with low-pitched roofs, carports and wide lawns, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vseaview3",
+   "district": "seaview",
+   "seed": 2052,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, mid-century modern single-story ranch houses with low-pitched roofs, carports and wide lawns, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vseaview4",
+   "district": "seaview",
+   "seed": 2053,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, mid-century modern single-story ranch houses with low-pitched roofs, carports and wide lawns, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vseaview5",
+   "district": "seaview",
+   "seed": 2054,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, mid-century modern single-story ranch houses with low-pitched roofs, carports and wide lawns, parked cars, trees, bright morning sun, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vmillworks1",
+   "district": "millworks",
+   "seed": 2060,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, light industrial area with metal warehouses, chain-link fences, a former lumber mill and auto shops, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vmillworks2",
+   "district": "millworks",
+   "seed": 2061,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, light industrial area with metal warehouses, chain-link fences, a former lumber mill and auto shops, parked cars, trees, late afternoon light, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vmillworks3",
+   "district": "millworks",
+   "seed": 2062,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, light industrial area with metal warehouses, chain-link fences, a former lumber mill and auto shops, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vmillworks4",
+   "district": "millworks",
+   "seed": 2063,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, light industrial area with metal warehouses, chain-link fences, a former lumber mill and auto shops, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  },
+  {
+   "id": "vmillworks5",
+   "district": "millworks",
+   "seed": 2064,
+   "prompt": "Security camera footage, elevated wide-angle view of an empty clean street in a small Californian coastal town, light industrial area with metal warehouses, chain-link fences, a former lumber mill and auto shops, parked cars, trees, overcast daylight, CCTV image, slightly grainy, photorealistic, no people, no text, no watermark"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guided demo · StreetCred</title>
+<meta name="description" content="Follow one deed end to end: a dirty camera frame, a claim, a one-time QR code, the camera and AI check, the proof, and an honest payout status.">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css"><link rel="stylesheet" href="/css/demo.css">
+</head><body>
+<main class="page demo"><div class="wrap">
+  <header class="dhead">
+    <div class="dtitle">
+      <div class="eyebrow">Guided demo · Port Calloway demo city</div>
+      <h1><span class="brandword">StreetCred</span> <em>Good deeds. Real credit.</em></h1>
+    </div>
+    <ul class="truth" aria-label="What this demo is">
+      <li>Demo frames</li><li>Simulated reward</li><li>No money moves</li>
+    </ul>
+  </header>
+  <ol class="stepper" id="stepper" aria-label="Demo progress">
+    <li data-s="spot">Dirty spot</li><li data-s="claim">Claim</li><li data-s="qr">QR check-in</li><li data-s="work">The work</li><li data-s="check">Camera + AI check</li><li data-s="result">Proof</li><li data-s="payout">Payout status</li>
+  </ol>
+  <p class="steptext" id="steptext" aria-hidden="true"></p>
+  <section class="stage" id="stage" aria-live="polite"></section>
+  <details class="about" id="about">
+    <summary>About this demo <span class="aichip" id="aichip">AI check: checking…</span></summary>
+    <div class="aboutbody">
+      <p id="aistate" role="status">Checking the AI model…</p>
+      <p id="aboutcam"></p>
+      <p>Each run creates an isolated copy of the program. Nothing here changes the city’s live program or ledger, and the payout step never calls PayPal.</p>
+      <p>Demo frames: an AI-generated street-camera frame (FLUX.1-schnell) and the same frame with the bags removed by an inpainting model (LaMa) for the “after”.</p>
+      <p>The camera check runs in your browser like an edge camera. The one-time QR code, the decision and the AI question run on the server — the same code path as the city program.</p>
+      <p id="outagelink"></p>
+    </div>
+  </details>
+</div></main>
+<script type="module" src="/js/demo.js"></script>
+</body></html>

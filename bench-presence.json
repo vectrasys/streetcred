@@ -1,0 +1,24 @@
+{
+  "qwen2.5vl:3b": {
+    "accuracy": 0.875,
+    "right": 14,
+    "total": 16,
+    "avg_ms": 2802,
+    "wrong": [
+      "bench done=false light=1 → true",
+      "bench done=false light=0.75 → true"
+    ]
+  },
+  "gemma3:4b": {
+    "accuracy": 0.75,
+    "right": 12,
+    "total": 16,
+    "avg_ms": 2454,
+    "wrong": [
+      "tree-pit done=false light=1 → true",
+      "tree-pit done=false light=0.75 → true",
+      "bench done=true light=1 → false",
+      "bench done=true light=0.75 → false"
+    ]
+  }
+}

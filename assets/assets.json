@@ -1,0 +1,58 @@
+{
+ "sidewalk": {
+  "roi": {
+   "x": 331,
+   "y": 371,
+   "w": 506,
+   "h": 302
+  },
+  "source": {
+   "title": "AI-generated street camera frame",
+   "license": "Apache-2.0 (FLUX.1-schnell output)",
+   "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "artist": "Generated locally with mflux"
+  }
+ },
+ "alley": {
+  "roi": {
+   "x": 584,
+   "y": 161,
+   "w": 526,
+   "h": 439
+  },
+  "source": {
+   "title": "AI-generated street camera frame",
+   "license": "Apache-2.0 (FLUX.1-schnell output)",
+   "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "artist": "Generated locally with mflux"
+  }
+ },
+ "lot": {
+  "roi": {
+   "x": 226,
+   "y": 166,
+   "w": 879,
+   "h": 409
+  },
+  "source": {
+   "title": "Fly-tipping - 15 May 2026.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Fly-tipping_-_15_May_2026.jpg",
+   "license": "CC0",
+   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Aethonatic\" title=\"User:Aethonatic\">Aethonatic</a>"
+  }
+ },
+ "tires": {
+  "roi": {
+   "x": 136,
+   "y": 286,
+   "w": 571,
+   "h": 227
+  },
+  "source": {
+   "title": "AI-generated street camera frame",
+   "license": "Apache-2.0 (FLUX.1-schnell output)",
+   "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "artist": "Generated locally with mflux"
+  }
+ }
+}
